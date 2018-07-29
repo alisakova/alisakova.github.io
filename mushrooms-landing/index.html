@@ -1,510 +1,508 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Грибы</title>
-	<meta name="viewport" content="width=device-width, height=device-height">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Noto+Sans:400,400i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<header class="header">
-  <div class="container">
-    <div class="header__list">
-      <div class="header__item">
-        <img src="img/eko.svg" alt="Ekology icon" class="header__icon" />
-        <span>Эко</span>
-      </div>
-      <div class="header__item">
-        <img src="img/gmo.svg" alt="Without GMO icon" class="header__icon" />
-        <span>Без ГМО</span>
-      </div>
-      <div class="header__item">
-        <img src="img/diet.svg" alt="Diet icon" class="header__icon" />
-        <span>Рекомендовано диетологами</span>
-      </div>
-      <div class="header__item">
-        <img src="img/choice.svg" alt="Choice icon" class="header__icon" />
-        <span>Выбор 2018 года</span>
-      </div>
-    </div>
-  </div>
-</header>
-
-	<main>
-		<section class="first-slide">
-  <div class="container">
-    <div class="first-slide__container">
-      <div class="first-slide__col">
-        <div class="first-slide__img">
-          <img src="img/first-slide-img.png" alt="Mushrooms" />
-        </div>
-        <div class="first-slide__price price">
-          <div class="price__row">
-            <span class="price__new">Новая цена:</span>
-            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{$product.title}</title>
+		<!-- OG -->
+		<meta property="og:url" content="http://{$landing.domain}/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{$product.title}" />
+		<meta property="og:image" content="http://infocdn.org/img/products_new/{$landing.product_id}.png" />
+		<meta property="og:site_name" content="{$product.title}" />
+		<meta property="og:description" content="{$product.full_description}" />
+		<!-- JS -->
+		<script src="{$jsUrl}jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/files/_js/validation.js"></script>
+		<script type="text/javascript" src="{$jsUrl}ab.min.js"></script>
+		<script type="text/javascript">$jsonData = {$jsonData};</script>
+		<script type="text/javascript" src="/files/{$landing.dir}/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Noto+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__list">
+          <div class="header__item">
+            <img src="img/eko.svg" alt="Ekology icon" class="header__icon" />
+            <span>Эко</span>
           </div>
-          <div class="price__row">
-            <span class="price__old">старая цена:</span>
-            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+          <div class="header__item">
+            <img src="img/gmo.svg" alt="Without GMO icon" class="header__icon" />
+            <span>Без ГМО</span>
+          </div>
+          <div class="header__item">
+            <img src="img/diet.svg" alt="Diet icon" class="header__icon" />
+            <span>Рекомендовано диетологами</span>
+          </div>
+          <div class="header__item">
+            <img src="img/choice.svg" alt="Choice icon" class="header__icon" />
+            <span>Выбор 2018 года</span>
           </div>
         </div>
       </div>
-      <div class="first-slide__col">
-        <h1>
-          Собирайте урожай благородных
-          грибов круглый год!
-        </h1>
-        <div class="first-slide__descr">
-          Домашняя грибница вешенки — натуральные грибы с&nbsp;гарантией качества
-        </div>
-        <ul class="first-slide__list">
-          <li class="first-slide__list-item">
-            100% экологично, без ГМО и радионуклидов
-          </li>
-          <li class="first-slide__list-item">
-              Первые грибы уже через 7-10 дней
-          </li>
-          <li class="first-slide__list-item">
-            Без специфических запахов в квартире
-          </li>
-          <li class="first-slide__list-item">
-            Больше 5 кг урожая с&nbsp;одного набора
-          </li>
-        </ul>
-        <div class="first-slide__time">
-          <h2>До конца акции осталось:</h2>
-          <div class="first-slide__clock clock _timer">
-            <span class="hours">00</span>
-            <span class="minutes">00</span>
-            <span class="seconds">00</span>
+    </header>
+    <main>
+      <section class="first-slide">
+        <div class="container">
+          <div class="first-slide__container">
+            <div class="first-slide__col">
+              <div class="first-slide__img">
+                <img src="img/first-slide-img.png" alt="Mushrooms" />
+              </div>
+              <div class="first-slide__price price">
+                <div class="price__row">
+                  <span class="price__new">Новая цена:</span>
+                  <span class="price__value-new price_land_s1">{$geo_price_show}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+                <div class="price__row">
+                  <span class="price__old">старая цена:</span>
+                  <span class="price__value-old price_land_s2">{$geo_price_old}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="first-slide__col">
+              <h1>
+                Собирайте урожай благородных
+                грибов круглый год!
+              </h1>
+              <div class="first-slide__descr">
+                Домашняя грибница вешенки — натуральные грибы с&nbsp;гарантией качества
+              </div>
+              <ul class="first-slide__list">
+                <li class="first-slide__list-item">
+                  100% экологично, без ГМО и радионуклидов
+                </li>
+                <li class="first-slide__list-item">
+                  Первые грибы уже через 7-10 дней
+                </li>
+                <li class="first-slide__list-item">
+                  Без специфических запахов в квартире
+                </li>
+                <li class="first-slide__list-item">
+                  Больше 5 кг урожая с&nbsp;одного набора
+                </li>
+              </ul>
+              <div class="first-slide__time">
+                <h2>До конца акции осталось:</h2>
+                <div class="first-slide__clock clock _timer">
+                  <span class="hours">00</span>
+                  <span class="minutes">00</span>
+                  <span class="seconds">00</span>
+                </div>
+                <div class="clock-name">
+                  <span>Часов</span>
+                  <span>Минут</span>
+                  <span>Секунд</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="clock-name">
-            <span>Часов</span>
-            <span>Минут</span>
-            <span>Секунд</span>
+          <div class="first-slide__time mobile">
+            <h2>До конца акции осталось:</h2>
+            <div class="first-slide__clock clock _timer">
+              <span class="hours">00</span>
+              <span class="minutes">00</span>
+              <span class="seconds">00</span>
+            </div>
+            <div class="clock-name">
+              <span>Часов</span>
+              <span>Минут</span>
+              <span>Секунд</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="first-slide__time mobile">
-      <h2>До конца акции осталось:</h2>
-      <div class="first-slide__clock clock _timer">
-        <span class="hours">00</span>
-        <span class="minutes">00</span>
-        <span class="seconds">00</span>
-      </div>
-      <div class="clock-name">
-        <span>Часов</span>
-        <span>Минут</span>
-        <span>Секунд</span>
-      </div>
-    </div>
-    <div class="first-slide__btn-container">
-      <button type="button" class="first-slide__btn btn _to-form">
-        Заказать
-      </button>
-    </div>
-  </div>
-  <div class="first-slide__wave">
-
-  </div>
-</section>
-
-		<section class="descr-block">
-  <div class="descr-block__container container">
-    <div class="descr-block__descr">
-      <h2>
-        Сделайте рацион вашей семьи
-        вкуснее и полезнее!
-      </h2>
-      <p>
-        Грибы вешенки — это ценный диетический продукт, источник белка, витаминов и минералов. Регулярное употребление вешенок помогает выводить радиоактивные элементы, очищать кровь, препятствуют образованию опухолей.
-      </p>
-      <p>
-        Эти изысканные на вкус низкокалорийные грибы готовятся самыми разными способами, поэтому никогда не надоедают.
-      </p>
-    </div>
-    <div class="descr-block__img-container">
-      <div class="descr-block__img descr-block__img_mobile-hide">
-        <img src="img/descr-block-img-1.png" alt="Mushrooms img" />
-      </div>
-      <div class="descr-block__img descr-block__img_medium">
-        <img src="img/descr-block-img-2.png" alt="Mushrooms img" />
-      </div>
-      <div class="descr-block__img descr-block__img_small">
-        <img src="img/descr-block-img-3.png" alt="Mushrooms img" />
-      </div>
-    </div>
-  </div>
-</section>
-
-		<section class="quote">
-  <div class="container">
-    <div class="quote__text">
-      <div class="quote__icon quote__icon_left">
-        <img src="img/quote-icon.svg" alt="Quote icon" />
-      </div>
-      Вешенки, выращенные дома — это свежие, полезные, ароматные грибы круглый год! <span class="green">Без риска</span> отравиться или&nbsp;обнаружить в супе червяков.
-      <div class="quote__icon quote__icon_right">
-        <img src="img/mushroom-icon.svg" alt="Quote icon" />
-      </div>
-    </div>
-  </div>
-</section>
-
-		<section class="set container">
-  <h2>Что входит в набор для выращивания вешенки?</h2>
-  <div class="set__content">
-    <div class="set__img">
-      <img src="img/set-img.png" alt="Mushrooms img" />
-    </div>
-    <div class="set__descr">
-      <div class="set__item">
-        <span class="set__line"></span>
-        <img src="img/box.svg" class="set__icon" alt="Box icon" />
-        <span class="set__descr">Коробка с субстратом грибов</span>
-      </div>
-      <div class="set__item">
-        <span class="set__line"></span>
-        <img src="img/spray.svg" class="set__icon" alt="Box icon" />
-        <span class="set__descr">Специальный состав для проращивания</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-		<section class="attention">
-  <div class="container">
-    <h2>Внимание</h2>
-    <div class="attention__icon">
-      <img src="img/warning.svg" alt="Warning icon" />
-    </div>
-    <span class="attention__text">
-        Данному набору не требуются
-        <span class="yellow">специальные условия!</span>
-    </span>
-  </div>
-</section>
-
-		<section class="make-order">
-  <div class="container">
-    <div class="make-order__content">
-      <div class="make-order__badge">
-        <div class="make-order__icon">
-          <img src="img/badge.png" alt="Badge" />
-        </div>
-        <span>со скидкой 70%</span>
-      </div>
-      <div class="make-order__caption">
-        Закажите домашнюю
-        <span class="large">грибницу</span>
-        <span class="large">вешенки!</span>
-      </div>
-      <div class="make-order__img">
-        <img src="img/mushroom.png" alt="Mushroom" />
-      </div>
-      <div class="make-order__descr">
-        <div class="make-order__time">
-          <h2>До конца акции осталось:</h2>
-          <div class="make-order__clock clock _timer">
-            <span class="hours">00</span>
-            <span class="minutes">00</span>
-            <span class="seconds">00</span>
-          </div>
-          <div class="clock-name">
-            <span>Часов</span>
-            <span>Минут</span>
-            <span>Секунд</span>
-          </div>
-        </div>
-        <div class="make-order__price price">
-          <div class="price__row">
-            <span class="price__new">Новая цена:</span>
-            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
-          </div>
-          <div class="price__row">
-            <span class="price__old">старая цена:</span>
-            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
-          </div>
-        </div>
-        <div class="make-order__btn-container">
-          <button type="button" class="first-slide__btn btn _to-form">
+          <div class="first-slide__btn-container">
+            <button type="button" class="first-slide__btn btn _to-form">
             Заказать
-          </button>
+            </button>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-		<section class="steps">
-  <div class="container">
-    <h2>Как вырастить свой урожай грибов?</h2>
-    <div class="steps__container">
-      <div class="steps__step">
-        <div class="steps__img">
-          <img src="img/step-1.png" alt="First step img" />
+        <div class="first-slide__wave">
         </div>
-        <div class="steps__line">
+      </section>
+      <section class="descr-block">
+        <div class="descr-block__container container">
+          <div class="descr-block__descr">
+            <h2>
+              Сделайте рацион вашей семьи
+              вкуснее и полезнее!
+            </h2>
+            <p>
+              Грибы вешенки — это ценный диетический продукт, источник белка, витаминов и минералов. Регулярное употребление вешенок помогает выводить радиоактивные элементы, очищать кровь, препятствуют образованию опухолей.
+            </p>
+            <p>
+              Эти изысканные на вкус низкокалорийные грибы готовятся самыми разными способами, поэтому никогда не надоедают.
+            </p>
+          </div>
+          <div class="descr-block__img-container">
+            <div class="descr-block__img descr-block__img_mobile-hide">
+              <img src="img/descr-block-img-1.png" alt="Mushrooms img" />
+            </div>
+            <div class="descr-block__img descr-block__img_medium">
+              <img src="img/descr-block-img-2.png" alt="Mushrooms img" />
+            </div>
+            <div class="descr-block__img descr-block__img_small">
+              <img src="img/descr-block-img-3.png" alt="Mushrooms img" />
+            </div>
+          </div>
         </div>
-        <div class="steps__text">
-          <span class="steps__number">01</span>
-          <span class="steps__descr">
-            Вскройте коробку
-            по&nbsp;линии и надрежьте
-            целлофан
+      </section>
+      <section class="quote">
+        <div class="container">
+          <div class="quote__text">
+            <div class="quote__icon quote__icon_left">
+              <img src="img/quote-icon.svg" alt="Quote icon" />
+            </div>
+            Вешенки, выращенные дома — это свежие, полезные, ароматные грибы круглый год! <span class="green">Без риска</span> отравиться или&nbsp;обнаружить в супе червяков.
+            <div class="quote__icon quote__icon_right">
+              <img src="img/mushroom-icon.svg" alt="Quote icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="set container">
+        <h2>Что входит в набор для выращивания вешенки?</h2>
+        <div class="set__content">
+          <div class="set__img">
+            <img src="img/set-img.png" alt="Mushrooms img" />
+          </div>
+          <div class="set__descr">
+            <div class="set__item">
+              <span class="set__line"></span>
+              <img src="img/box.svg" class="set__icon" alt="Box icon" />
+              <span class="set__descr">Коробка с субстратом грибов</span>
+            </div>
+            <div class="set__item">
+              <span class="set__line"></span>
+              <img src="img/spray.svg" class="set__icon" alt="Box icon" />
+              <span class="set__descr">Специальный состав для проращивания</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="attention">
+        <div class="container">
+          <h2>Внимание</h2>
+          <div class="attention__icon">
+            <img src="img/warning.svg" alt="Warning icon" />
+          </div>
+          <span class="attention__text">
+          Данному набору не требуются
+          <span class="yellow">специальные условия!</span>
           </span>
         </div>
-      </div>
-      <div class="steps__step steps__step_reverse">
-        <div class="steps__img">
-          <img src="img/step-2.png" alt="First step img" />
-        </div>
-        <div class="steps__line">
-        </div>
-        <div class="steps__text">
-          <span class="steps__number">02</span>
-          <span class="steps__descr">
-            Вспрысните почву и
-            добавьте специальный
-            состав
-          </span>
-        </div>
-      </div>
-      <div class="steps__step">
-        <div class="steps__img">
-          <img src="img/step-3.png" alt="First step img" />
-        </div>
-        <div class="steps__line">
-        </div>
-        <div class="steps__text">
-          <span class="steps__number">03</span>
-          <span class="steps__descr">
-            Уже через 7-10 дней
-            вы&nbsp;увидите первые грибочки
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="steps__wave">
-    
-  </div>
-</section>
-
-    <section class="advantages">
-  <div class="container">
-    <h2>Почему домашняя грибница вешенки — идеальное решение?</h2>
-    <div class="advantages__slider advantages-slider">
-      <div>
-        <div class="advantages-slider__img">
-          <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
-        </div>
-        <div class="advantages-slider__line">
-        </div>
-        <div class="advantages-slider__descr">
-          <div class="advantages-slider__caption">
-            Грибы из магазинов
-          </div>
-          <p class="advantages-slider__text">
-            Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
-          </p>
-        </div>
-      </div>
-      <div>
-        <div class="advantages-slider__img">
-          <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
-        </div>
-        <div class="advantages-slider__line">
-        </div>
-        <div class="advantages-slider__descr">
-          <div class="advantages-slider__caption">
-            Грибы из магазинов
-          </div>
-          <p class="advantages-slider__text">
-            Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
-          </p>
-        </div>
-      </div>
-      <div>
-        <div class="advantages-slider__img">
-          <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
-        </div>
-        <div class="advantages-slider__line">
-        </div>
-        <div class="advantages-slider__descr">
-          <div class="advantages-slider__caption">
-            Грибы из магазинов
-          </div>
-          <p class="advantages-slider__text">
-            Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-		<section class="expert container">
-  <div class="expert__container">
-    <div class="expert__col">
-      <div class="expert__img">
-        <img src="img/chef.png" alt="Chef" />
-      </div>
-    </div>
-    <div class="expert__col">
-      <h2>Что говорят эксперты?</h2>
-      <p>
-        «Вешенка отличается высокими вкусовыми качествами, ярким ароматом
-        и универсальностью: этот гриб подходит для первых, вторых блюд и всех видов закусок. Единственное, с чем он, по моему мнению, не сочетается — морепродукты.
-      </p>
-      <p>
-        По составу витаминов вешенка схожа с мясом — мякоть этих грибов содержит витамины группы B, а также С, Е, и D2. По уровню содержания витамина PP вешенка считается самым ценным грибом. Кроме того, при употреблении этих грибов в пищу, организм получает ферменты, способствующие расщеплению жиров и гликогена.
-      </p>
-      <p>
-        На 7-8 % мякоть вешенок состоит из минеральных веществ, среди которых необходимые человеку железо, калий, йод, кальций и т.д. В результате употребления вешенки в пищу снижается уровень холестерина в крови, а сок этого гриба подавляет развитие кишечной палочки.»
-      </p>
-      <div class="expert__signature">
-        <span class="bold">Александр Бондарович,</span>
-        бренд шеф повар, технолог
-        общественного питания
-      </div>
-    </div>
-  </div>
-
-</section>
-
-    <section class="customers">
-  <div class="container">
-    <h2>Что говорят наши покупатели?</h2>
-    <div class="customers__slider customers-slider">
-      <div>
-        <div class="customers-slider__img">
-          <img src="img/customer.png" alt="Customer photo" />
-        </div>
-        <div class="customers-slider__info">
-          <span class="customers-slider__name">Людмила Вадимовна</span>
-          <span class="customers-slider__city">г. Курск</span>
-        </div>
-        <p class="customers-slider__text">
-          «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
-        </p>
-      </div>
-      <div>
-        <div class="customers-slider__img">
-          <img src="img/customer.png" alt="Customer photo" />
-        </div>
-        <div class="customers-slider__info">
-          <span class="customers-slider__name">Людмила Вадимовна</span>
-          <span class="customers-slider__city">г. Курск</span>
-        </div>
-        <p class="customers-slider__text">
-          «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
-        </p>
-      </div>
-      <div>
-        <div class="customers-slider__img">
-          <img src="img/customer.png" alt="Customer photo" />
-        </div>
-        <div class="customers-slider__info">
-          <span class="customers-slider__name">Людмила Вадимовна</span>
-          <span class="customers-slider__city">г. Курск</span>
-        </div>
-        <p class="customers-slider__text">
-          «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-		<section class="buy-now">
-  <div class="container">
-    <div class="buy-now__content">
-      <div class="buy-now__caption">
-        Закажите домашнюю
-        <span class="large">грибницу</span>
-        <span class="large">вешенки!</span>
-        <div class="buy-now__badge">
-          со скидкой 70%
-        </div>
-      </div>
-      <div>
-        <div class="buy-now__img">
-          <img src="img/mushroom.png" alt="Mushroom" />
-        </div>
-        <div class="buy-now__price price mobile">
-          <div class="price__row">
-            <span class="price__new">Новая цена:</span>
-            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
-          </div>
-          <div class="price__row">
-            <span class="price__old">старая цена:</span>
-            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+      </section>
+      <section class="make-order">
+        <div class="container">
+          <div class="make-order__content">
+            <div class="make-order__badge">
+              <div class="make-order__icon">
+                <img src="img/badge.png" alt="Badge" />
+              </div>
+              <span>со скидкой 70%</span>
+            </div>
+            <div class="make-order__caption">
+              Закажите домашнюю
+              <span class="large">грибницу</span>
+              <span class="large">вешенки!</span>
+            </div>
+            <div class="make-order__img">
+              <img src="img/mushroom.png" alt="Mushroom" />
+            </div>
+            <div class="make-order__descr">
+              <div class="make-order__time">
+                <h2>До конца акции осталось:</h2>
+                <div class="make-order__clock clock _timer">
+                  <span class="hours">00</span>
+                  <span class="minutes">00</span>
+                  <span class="seconds">00</span>
+                </div>
+                <div class="clock-name">
+                  <span>Часов</span>
+                  <span>Минут</span>
+                  <span>Секунд</span>
+                </div>
+              </div>
+							<div class="first-slide__price price">
+                <div class="price__row">
+                  <span class="price__new">Новая цена:</span>
+                  <span class="price__value-new price_land_s1">{$geo_price_show}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+                <div class="price__row">
+                  <span class="price__old">старая цена:</span>
+                  <span class="price__value-old price_land_s2">{$geo_price_old}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+              </div>
+              <div class="make-order__btn-container">
+                <button type="button" class="first-slide__btn btn _to-form">
+                Заказать
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="buy-now__info">
-        <div class="buy-now__time">
-          <h2>До конца акции осталось:</h2>
-          <div class="buy-now__clock clock _timer">
-            <span class="hours">00</span>
-            <span class="minutes">00</span>
-            <span class="seconds">00</span>
-          </div>
-          <div class="clock-name">
-            <span>Часов</span>
-            <span>Минут</span>
-            <span>Секунд</span>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <h2>Как вырастить свой урожай грибов?</h2>
+          <div class="steps__container">
+            <div class="steps__step">
+              <div class="steps__img">
+                <img src="img/step-1.png" alt="First step img" />
+              </div>
+              <div class="steps__line">
+              </div>
+              <div class="steps__text">
+                <span class="steps__number">01</span>
+                <span class="steps__descr">
+                Вскройте коробку
+                по&nbsp;линии и надрежьте
+                целлофан
+                </span>
+              </div>
+            </div>
+            <div class="steps__step steps__step_reverse">
+              <div class="steps__img">
+                <img src="img/step-2.png" alt="First step img" />
+              </div>
+              <div class="steps__line">
+              </div>
+              <div class="steps__text">
+                <span class="steps__number">02</span>
+                <span class="steps__descr">
+                Вспрысните почву и
+                добавьте специальный
+                состав
+                </span>
+              </div>
+            </div>
+            <div class="steps__step">
+              <div class="steps__img">
+                <img src="img/step-3.png" alt="First step img" />
+              </div>
+              <div class="steps__line">
+              </div>
+              <div class="steps__text">
+                <span class="steps__number">03</span>
+                <span class="steps__descr">
+                Уже через 7-10 дней
+                вы&nbsp;увидите первые грибочки
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="buy-now__price price">
-          <div class="price__row">
-            <span class="price__new">Новая цена:</span>
-            <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
-          </div>
-          <div class="price__row">
-            <span class="price__old">старая цена:</span>
-            <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+        <div class="steps__wave">
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2>Почему домашняя грибница вешенки — идеальное решение?</h2>
+          <div class="advantages__slider advantages-slider">
+            <div>
+              <div class="advantages-slider__img">
+                <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
+              </div>
+              <div class="advantages-slider__line">
+              </div>
+              <div class="advantages-slider__descr">
+                <div class="advantages-slider__caption">
+                  Грибы из магазинов
+                </div>
+                <p class="advantages-slider__text">
+                  Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="advantages-slider__img">
+                <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
+              </div>
+              <div class="advantages-slider__line">
+              </div>
+              <div class="advantages-slider__descr">
+                <div class="advantages-slider__caption">
+                  Грибы из магазинов
+                </div>
+                <p class="advantages-slider__text">
+                  Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="advantages-slider__img">
+                <img src="img/mushrooms-slider.png" alt="Mushrooms img" />
+              </div>
+              <div class="advantages-slider__line">
+              </div>
+              <div class="advantages-slider__descr">
+                <div class="advantages-slider__caption">
+                  Грибы из магазинов
+                </div>
+                <p class="advantages-slider__text">
+                  Выращены в неизвестных условиях,<br />неделями транспортируются и лежат на прилавке, а стоят при этом намного дороже
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <form class="buy-now__form form">
-          <!-- {if $countrySelect}
-            <select name="country" class="country">
-                {foreach $prices as $country}
-                    <option value='{$country.country_id}'{if $country.active} selected="selected"{/if}>{$country.name}</option>
-                {/foreach}
-            </select>
-          {else}
-            <input type="hidden" name="country" value="0">
-          {/if} -->
-          <input type="text" name="name" class="form__input" placeholder="Имя" required />
-          <input type="text" name="phone" class="form__input" placeholder="Телефон" required />
-          <button type="submit" class="form__btn btn">
-            Заказать
-          </button>
-          <input type="hidden" name="address" value="">
-          <input type="hidden" name="product_count" id="product_count" value="1">
-          <input type="hidden" name="number_product" value="{$product.id}">
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-	</main>
-	<footer class="footer copyright">
-  <!-- {if $parkedDomain == 1}{$product.legal|replace:'logo.jpg':'transparent.png'}{else}{$product.legal}{/if} -->
-  <br>
-  <p><a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></p>
-</footer>
-
-	<script src="js/main.min.js"></script>
-</body>
+      </section>
+      <section class="expert container">
+        <div class="expert__container">
+          <div class="expert__col">
+            <div class="expert__img">
+              <img src="img/chef.png" alt="Chef" />
+            </div>
+          </div>
+          <div class="expert__col">
+            <h2>Что говорят эксперты?</h2>
+            <p>
+              «Вешенка отличается высокими вкусовыми качествами, ярким ароматом и универсальностью: этот гриб подходит для первых, вторых блюд и всех видов закусок. Единственное, с чем он, по моему мнению, не сочетается — морепродукты.
+            </p>
+            <p>
+              По составу витаминов вешенка схожа с мясом — мякоть этих грибов содержит витамины группы B, а также С, Е, и D2. По уровню содержания витамина PP вешенка считается самым ценным грибом. Кроме того, при употреблении этих грибов в пищу, организм получает
+              ферменты, способствующие расщеплению жиров и гликогена.
+            </p>
+            <p>
+              На 7-8 % мякоть вешенок состоит из минеральных веществ, среди которых необходимые человеку железо, калий, йод, кальций и т.д. В результате употребления вешенки в пищу снижается уровень холестерина в крови, а сок этого гриба подавляет развитие кишечной
+              палочки.»
+            </p>
+            <div class="expert__signature">
+              <span class="bold">Александр Бондарович,</span> бренд шеф повар, технолог общественного питания
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <h2>Что говорят наши покупатели?</h2>
+          <div class="customers__slider customers-slider">
+            <div>
+              <div class="customers-slider__img">
+                <img src="img/customer.png" alt="Customer photo" />
+              </div>
+              <div class="customers-slider__info">
+                <span class="customers-slider__name">Людмила Вадимовна</span>
+                <span class="customers-slider__city">г. Курск</span>
+              </div>
+              <p class="customers-slider__text">
+                «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать
+                словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
+              </p>
+            </div>
+            <div>
+              <div class="customers-slider__img">
+                <img src="img/customer.png" alt="Customer photo" />
+              </div>
+              <div class="customers-slider__info">
+                <span class="customers-slider__name">Людмила Вадимовна</span>
+                <span class="customers-slider__city">г. Курск</span>
+              </div>
+              <p class="customers-slider__text">
+                «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать
+                словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
+              </p>
+            </div>
+            <div>
+              <div class="customers-slider__img">
+                <img src="img/customer.png" alt="Customer photo" />
+              </div>
+              <div class="customers-slider__info">
+                <span class="customers-slider__name">Людмила Вадимовна</span>
+                <span class="customers-slider__city">г. Курск</span>
+              </div>
+              <p class="customers-slider__text">
+                «Домашняя грибница — это просто находка! Раньше грибы собирали только сами, в лесу, магазинным я совсем не доверяю, они какие-то пластмассовые, даже без запаха. А теперь у нас свежие грибочки растут прямо на кухне. А детям сколько радости — не передать
+                словами! теперь балуем себя свежими грибочками круглый год, а не только в сезон!»
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="buy-now">
+        <div class="container">
+          <div class="buy-now__content">
+            <div class="buy-now__caption">
+              Закажите домашнюю
+              <span class="large">грибницу</span>
+              <span class="large">вешенки!</span>
+              <div class="buy-now__badge">
+                со скидкой 70%
+              </div>
+            </div>
+            <div>
+              <div class="buy-now__img">
+                <img src="img/mushroom.png" alt="Mushroom" />
+              </div>
+              <div class="buy-now__price price mobile">
+                <div class="price__row">
+                  <span class="price__new">Новая цена:</span>
+                  <span class="price__value-new price_land_s1">990<span class="price_land_curr">&nbsp;₽</span></span>
+                </div>
+                <div class="price__row">
+                  <span class="price__old">старая цена:</span>
+                  <span class="price__value-old price_land_s2">1890<span class="price_land_curr">&nbsp;₽</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="buy-now__info">
+              <div class="buy-now__time">
+                <h2>До конца акции осталось:</h2>
+                <div class="buy-now__clock clock _timer">
+                  <span class="hours">00</span>
+                  <span class="minutes">00</span>
+                  <span class="seconds">00</span>
+                </div>
+                <div class="clock-name">
+                  <span>Часов</span>
+                  <span>Минут</span>
+                  <span>Секунд</span>
+                </div>
+              </div>
+							<div class="first-slide__price price">
+                <div class="price__row">
+                  <span class="price__new">Новая цена:</span>
+                  <span class="price__value-new price_land_s1">{$geo_price_show}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+                <div class="price__row">
+                  <span class="price__old">старая цена:</span>
+                  <span class="price__value-old price_land_s2">{$geo_price_old}<span class="price_land_curr">&nbsp;{$currency}</span></span>
+                </div>
+              </div>
+              <form class="buy-now__form form">
+                <!-- {if $countrySelect}
+                  <select name="country" class="country">
+                      {foreach $prices as $country}
+                          <option value='{$country.country_id}'{if $country.active} selected="selected"{/if}>{$country.name}</option>
+                      {/foreach}
+                  </select>
+                  {else}
+                  <input type="hidden" name="country" value="0">
+                  {/if} -->
+                <input type="text" name="name" class="form__input" placeholder="Имя" required />
+                <input type="text" name="phone" class="form__input" placeholder="Телефон" required />
+                <button type="submit" class="form__btn btn">
+                Заказать
+                </button>
+                <input type="hidden" name="address" value="">
+                <input type="hidden" name="product_count" id="product_count" value="1">
+                <input type="hidden" name="number_product" value="{$product.id}">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer copyright">
+      <!-- {if $parkedDomain == 1}{$product.legal|replace:'logo.jpg':'transparent.png'}{else}{$product.legal}{/if} -->
+      <br>
+      <p><a href="/privacypolicy" target="_blank">Политика конфиденциальности</a></p>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

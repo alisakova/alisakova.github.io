@@ -6,15 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Exrates</title>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400i,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link rel='stylesheet' href='img/favicon/16.png' sizes='16x16' type='image/png'>
+  <link rel='stylesheet' href='img/favicon/32.png' sizes='32x32' type='image/png'>
+  <link rel='apple-touch-icon' href='img/favicon/256.png' type='image/png'>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="header__right-col">
+        <div class="header__logo">
+          <img src="img/logo.svg" alt="Exrates logo" class="header__logo-desktop" />
+          <img src="img/logo_mobile.svg" alt="Exrates logo" class="header__logo-mobile " />
+        </div>
+        <div class="header__nav">
+          <a href="index.html" class="header__link">Submit coin for listing</a>
+          <a href="listing.html" class="header__link">Future&nbsp;listing</a>
+          <a href="requirements.html" class="header__link">Technical&nbsp;requirements</a>
+          <a href="kit.html" class="header__link header__link_active">Media&nbsp;kit</a>
+        </div>
+        <button class="header__get-listed-btn button _listed">
+          Get listed
+        </button>
+      </div>
+      <div class="header__left-col">
         <div class="header__dropdown dropdown dropdown_menu">
           <button class="dropdown__toggle dropdown__button dropdown__button_without-icon">
             <img src="img/burger.svg" alt="Burger icon" />
@@ -34,54 +53,41 @@
             </a>
           </div>
         </div>
-        <div class="header__logo">
-          <img src="img/logo.svg" alt="Exrates logo" />
-        </div>
-        <div class="header__nav">
-          <a href="index.html" class="header__link">Submit coin for listing</a>
-          <a href="listing.html" class="header__link">Future&nbsp;listing</a>
-          <a href="requirements.html" class="header__link">Technical&nbsp;requirements</a>
-          <a href="kit.html" class="header__link header__link_active">Media&nbsp;kit</a>
-        </div>
-        <button class="header__get-listed-btn button _listed">
-          Get listed
-        </button>
-      </div>
-      <div class="header__left-col">
-        <div class="header__dropdown dropdown">
+        <div class="header__dropdown dropdown dropdown_hover">
           <button class="dropdown__toggle dropdown__button">
-            <img src="img/En.svg" class="dropdown__icon" alt="Flag iconA" />EN
+            <img src="img/lang/En.svg" class="dropdown__icon" alt="Flag iconA" />
+            <span>EN</span>
           </button>
           <div class="dropdown__menu">
             <div class="dropdown__col">
               <button class="dropdown__item dropdown__button">
-                <img src="img/In.svg" class="dropdown__icon" alt="Flag icon" />Indonesian
+                <img src="img/lang/In.svg" class="dropdown__icon" alt="Flag icon" />Indonesian
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/turkish.svg" class="dropdown__icon" alt="Flag icon" />Turkish
+                <img src="img/lang/turkish.svg" class="dropdown__icon" alt="Flag icon" />Turkish
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/Hi.svg" class="dropdown__icon" alt="Flag icon" />Hindi
+                <img src="img/lang/Hi.svg" class="dropdown__icon" alt="Flag icon" />Hindi
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/korean.svg" class="dropdown__icon" alt="Flag icon" />Korean
+                <img src="img/lang/korean.svg" class="dropdown__icon" alt="Flag icon" />Korean
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/japanese.svg" class="dropdown__icon" alt="Flag icon" />Japanese
+                <img src="img/lang/japanese.svg" class="dropdown__icon" alt="Flag icon" />Japanese
               </button>
             </div>
             <div class="dropdown__col">
               <button class="dropdown__item dropdown__button">
-                <img src="img/portugal.svg" class="dropdown__icon" alt="Flag icon" />Portuguese
+                <img src="img/lang/portugal.svg" class="dropdown__icon" alt="Flag icon" />Portuguese
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/It.svg" class="dropdown__icon" alt="Flag icon" />Italian
+                <img src="img/lang/It.svg" class="dropdown__icon" alt="Flag icon" />Italian
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/De.svg" class="dropdown__icon" alt="Flag icon" />German
+                <img src="img/lang/De.svg" class="dropdown__icon" alt="Flag icon" />German
               </button>
               <button class="dropdown__item dropdown__button">
-                <img src="img/Ch.svg" class="dropdown__icon" alt="Flag icon" />Chinese
+                <img src="img/lang/Ch.svg" class="dropdown__icon" alt="Flag icon" />Chinese
               </button>
             </div>
           </div>
@@ -160,20 +166,20 @@
               <div class="media-kit__item">
                 <h2 class="media-kit__caption">Covers</h2>
                 <div class="media-kit__types">
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">820x310 (<span>Facebook</span>)</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">1500x500 (<span>Twitter</span>)</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">2560x1440 (<span>Youtube</span>)</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">820x310 (<span>Facebook</span>)</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">1500x500 (<span>Twitter</span>)</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">2560x1440 (<span>Youtube</span>)</a>
                 </div>
                 <div class="media-kit__types-img media-kit__types-img_adaptive-width">
-                  <img src="img/cover.png" alt="Cover" />
+                  <img src="img/cover.jpg" alt="Cover" />
                 </div>
               </div>
               <div class="media-kit__item">
                 <h2 class="media-kit__caption">Logos</h2>
                 <div class="media-kit__types">
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">250&nbsp;<span>X</span>&nbsp;750</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">180&nbsp;<span>X</span>&nbsp;540</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">128&nbsp;<span>X</span>&nbsp;384</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">250&nbsp;<span>X</span>&nbsp;750</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">180&nbsp;<span>X</span>&nbsp;540</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">128&nbsp;<span>X</span>&nbsp;384</a>
                 </div>
                 <div class="media-kit__types-img media-kit__types-img_with-logo media-kit__types-img_bg-white">
                   <img src="img/logo-kit-1.svg" alt="Logo" />
@@ -191,9 +197,9 @@
               <div class="media-kit__item">
                 <h2 class="media-kit__caption">Icons</h2>
                 <div class="media-kit__types">
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">500&nbsp;<span>X</span>&nbsp;500</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">250&nbsp;<span>X</span>&nbsp;250</a>
-                  <a href="img/cover.png" class="media-kit__type" download="Cover">128&nbsp;<span>X</span>&nbsp;128</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">500&nbsp;<span>X</span>&nbsp;500</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">250&nbsp;<span>X</span>&nbsp;250</a>
+                  <a href="img/cover.jpg" class="media-kit__type" download="Cover">128&nbsp;<span>X</span>&nbsp;128</a>
                 </div>
                 <div class="media-kit__types-img-container">
                   <div class="media-kit__types-img media-kit__types-img_small media-kit__types-img_no-margin-bottom media-kit__types-img_margin-right">
