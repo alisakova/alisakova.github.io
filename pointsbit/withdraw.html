@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body>
+  <div class="background-layout">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <nav class="nav nav_padding-top">
+        <div class="nav__item">
+          <button class="nav__link nav__link_active">Wallet</button>
+        </div>
+        <div class="nav__item">
+          <a href="faq.html" class="nav__link">FAQ</a>
+        </div>
+        <div class="nav__item">
+          <a href="legal.html" class="nav__link">Legal</a>
+        </div>
+        <div class="nav__item">
+          <a href="contact.html" class="nav__link">Contact us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dashboard-wrapper">
+      <div class="aside-nav-container">
+        <div class="aside-nav-container__user">
+          <a href="#">customer@mail.com</a>
+        </div>
+        <nav class="aside-nav">
+          <div class="aside-nav__item">
+            <a href="dashboard.html" class="aside-nav__link">Dashboard</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="transactions.html" class="aside-nav__link">All transactions</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="withdraw.html" class="aside-nav__link aside-nav__link_active">Withdraw</a>
+          </div>
+        </nav>
+      </div>
+
+      <section class="dashboard">
+        <div class="logout-container">
+          <div class="logout">
+            <a href="" class="logout__link">Logout</a>
+            <button class="logout__icon" title="Settings">
+
+            </button>
+          </div>
+        </div>
+
+        <div class="withdraw-container">
+          <div class="withdraw-block">
+            <form action="" class="form">
+              <div class="withdraw-block__form">
+                <div class="withdraw-block__title">
+                  Withdraw
+                </div>
+                <div class="withdraw-block__mixed-item">
+                  <div class="select-container select-container_green-arrow">
+                    <select class="form__select select" name="state">
+                      <option value="btc">
+                        BTC
+                      </option>
+                      <option value="eth">
+                        ETH
+                      </option>
+                      <option value="3">
+                        BTC
+                      </option>
+                    </select>
+                  </div>
+                  <input type="text" value="0.16615" class="withdraw__input">
+                </div>
+                <div class="form__item form__item_flex form__item_with-content">
+                  <span class="form__content">To</span>
+                  <input type="text" value="100" disabled class="form__input form__input_alt" placeholder="" />
+                </div>
+                <button class="withdraw-block__btn">
+                  Withdraw
+                </button>
+              </div>
+              <div class="form__accept">
+                <label for="accept-1" class="form__label checkbox checkbox_big">
+                  I accept Terms&Conditions and Privacy Policy
+                  <input id="accept-1" type="checkbox">
+                  <span class="checkbox__checkmark checkbox__checkmark_big"></span>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="block block_small block_box-shadow">
+            <div class="block__body block__body_without-header">
+              <h2 class="block__title block__title_alt">Balance wallet</h2>
+              <div class="wallet-balance wallet-balance_margin-left wallet-balance_big-padding-bottom">
+                <div class="wallet-balance__title">BTC wallet</div>
+                <div class="wallet-balance__amount wallet-balance__amount_margin-bottom-0">
+                  0.16615 BTC
+                </div>
+              </div>
+              <div class="wallet-balance wallet-balance_margin-left wallet-balance_big-padding-bottom">
+                <div class="wallet-balance__title">ETH wallet</div>
+                <div class="wallet-balance__amount wallet-balance__amount_margin-bottom-0">
+                  46.47095 ETH
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

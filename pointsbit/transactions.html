@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="background-layout">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+      <nav class="nav nav_padding-top">
+        <div class="nav__item">
+          <button class="nav__link nav__link_active">Wallet</button>
+        </div>
+        <div class="nav__item">
+          <a href="faq.html" class="nav__link">FAQ</a>
+        </div>
+        <div class="nav__item">
+          <a href="legal.html" class="nav__link">Legal</a>
+        </div>
+        <div class="nav__item">
+          <a href="contact.html" class="nav__link">Contact us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dashboard-wrapper">
+      <div class="aside-nav-container">
+        <div class="aside-nav-container__user">
+          <a href="#">customer@mail.com</a>
+        </div>
+        <nav class="aside-nav">
+          <div class="aside-nav__item">
+            <a href="dashboard.html" class="aside-nav__link">Dashboard</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="transactions.html" class="aside-nav__link aside-nav__link_active">All transactions</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="withdraw.html" class="aside-nav__link">Withdraw</a>
+          </div>
+        </nav>
+      </div>
+
+      <section class="dashboard">
+        <div class="logout-container">
+          <div class="logout">
+            <a href="" class="logout__link">Logout</a>
+            <button class="logout__icon" title="Settings">
+
+            </button>
+          </div>
+        </div>
+
+        <div class="block">
+          <header class="block__header">
+            <h2 class="block__title">All transactions</h2>
+          </header>
+          <div class="block__body block__body_padding-top-0">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="table__th">Wallet</th>
+                  <th class="table__th">Status</th>
+                  <th class="table__th">Currency</th>
+                  <th class="table__th">Date</th>
+                  <th class="table__th">Amount to wallet</th>
+                  <th class="table__th">Payment amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status table__status_waiting">
+              Waiting
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">07/04/2017</td>
+                  <td class="table__td">9.12.2015</td>
+                  <td class="table__td">01828112233</td>
+                </tr>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status">
+              Confirmed
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">05/12/2017</td>
+                  <td class="table__td">9.12.2016</td>
+                  <td class="table__td">01828152233</td>
+                </tr>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status">
+              Confirmed
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">08/08/2017</td>
+                  <td class="table__td">9.12.2016</td>
+                  <td class="table__td">01328112234</td>
+                </tr>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status">
+              Confirmed
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">26/08/2016</td>
+                  <td class="table__td">9.12.2015</td>
+                  <td class="table__td">01328342233</td>
+                </tr>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status">
+              Confirmed
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">19/10/2017</td>
+                  <td class="table__td">9.12.2016</td>
+                  <td class="table__td">01828112233</td>
+                </tr>
+                <tr>
+                  <td class="table__td">customer@mail.com</td>
+                  <td class="table__td">
+                    <span class="table__status">
+              Confirmed
+            </span>
+                  </td>
+                  <td class="table__td">BTC</td>
+                  <td class="table__td">01/02/2017</td>
+                  <td class="table__td">9.12.2016</td>
+                  <td class="table__td">01728152233</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
