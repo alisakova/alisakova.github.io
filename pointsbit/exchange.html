@@ -15,13 +15,14 @@
 </head>
 
 <body>
-  <div class="wrapper background-layout">
+  <div class="wrapper background-layout background-layout_with-back exchange">
     <div class="content">
       <header class="big-header big-header_padding-bottom-36">
         <a href="index.html" class="big-header__logo">
           <img src="img/logo.svg" alt="Logo" />
         </a>
-        <nav class="nav">
+        <button class="burger _open-menu"></button>
+        <nav class="nav nav_desktop">
           <div class="nav__item nav__item_relative _popup-block-container">
             <button class="nav__link _open-popup-block">Wallet</button>
             <div class="popup-block wallet-form _popup-block">
@@ -64,6 +65,24 @@
           </div>
         </nav>
       </header>
+
+      <div class="menu _menu">
+        <button class="menu__close _close-menu"></button>
+        <nav class="nav nav_direction-column">
+          <div class="nav__item">
+            <a href="wallet.html" class="nav__link">Wallet</a>
+          </div>
+          <div class="nav__item">
+            <a href="faq.html" class="nav__link">FAQ</a>
+          </div>
+          <div class="nav__item">
+            <a href="legal.html" class="nav__link">Legal</a>
+          </div>
+          <div class="nav__item">
+            <a href="contact.html" class="nav__link">Contact us</a>
+          </div>
+        </nav>
+      </div>
 
       <main class="first-slide">
         <div class="first-slide__content exchange">
