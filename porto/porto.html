@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Porto O Coffee</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body>
+  <header class="header header_porto">
+    <div class="header__container container">
+      <a onclick="scrollToTop();return false" class="header__logo-container">
+        <img src="img/porto/logo.png" alt="Логотип" class="header__logo">
+      </a>
+      <button class="burger _open-menu"></button>
+      <nav class="nav nav_desktop">
+        <a href="#menu" class="nav__link nav__link_green-border">Меню</a>
+        <a href="" class="nav__link nav__link_green-border">Доставка</a>
+        <a href="#reviews" class="nav__link nav__link_green-border">Отзывы</a>
+        <a href="#news" class="nav__link nav__link_green-border">Новости и акции</a>
+        <a href="#jobs" class="nav__link nav__link_green-border">Вакансии</a>
+        <a href="#contacts" class="nav__link nav__link_green-border">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu _menu">
+    <button class="mobile-menu__close _close-menu"></button>
+    <nav class="nav nav_direction-column">
+      <div class="nav__item">
+        <a href="#menu" class="nav__link">Меню</a>
+      </div>
+      <div class="nav__item">
+        <a href="" class="nav__link">Доставка</a>
+      </div>
+      <div class="nav__item">
+        <a href="#reviews" class="nav__link">Отзывы</a>
+      </div>
+      <div class="nav__item">
+        <a href="#news" class="nav__link">Новости и акции</a>
+      </div>
+      <div class="nav__item">
+        <a href="#jobs" class="nav__link">Вакансии</a>
+      </div>
+      <div class="nav__item">
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="wrapper">
+    <section id="first-slide" data-parallax="scroll" data-image-src="/img/porto/porto-bg.jpg" class="first-slide first-slide_porto _parallax-window-porto">
+      <div class="container first-slide__container">
+        <h1 class="first-slide__title first-slide__title_porto">
+      Порт приписки хороших кофе, вина и вашего настроения
+    </h1>
+        <div class="first-slide__subtitle subtitle">
+          <span class="subtitle__text">Кофе</span>
+          <span class="subtitle__divider">|</span>
+          <span class="subtitle__text">Десерты</span>
+          <span class="subtitle__divider">|</span>
+          <span class="subtitle__text">Вино</span>
+        </div>
+        <div class="first-slide__btn-container">
+          <button class="button button_green-bg">Забронировать столик</button>
+          <button class="button button_green-bordered">Заказать доставку</button>
+        </div>
+        <div class="first-slide__links landing-nav landing-nav_porto">
+          <div class="landing-nav__block landing-nav__block_active">
+            <a href="porto.html" class="landing-nav__link landing-nav__link_active">
+          Port&nbsp;o<br />
+          coffee
+        </a>
+          </div>
+          <div class="landing-nav__block">
+            <a href="manufactura.html" class="landing-nav__link">
+          Port&nbsp;o<br />
+          Manufaktura
+        </a>
+          </div>
+          <div class="landing-nav__block">
+            <a href="resto.html" class="landing-nav__link">
+          Resto<br />
+          Presto
+        </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="menu__title title">
+      <span class="title__content">Меню</span>
+    </h2>
+        <div class="menu__container">
+          <div class="menu__block menu__block_porto">
+            <div class="menu__slider">
+              <div class="menu__slide">
+                <div class="menu__name">
+                  <span class="menu__text">
+                Кофе
+              </span>
+                </div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Кофейное меню" />
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide">
+                <div class="menu__name">Чай</div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Чайное меню">
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__block menu__block_porto">
+            <div class="menu__slider">
+              <div class="menu__slide">
+                <div class="menu__name">Десерты</div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Десертное меню">
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide">
+                <div class="menu__name">Горячие блюда</div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Сытное меню">
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__block menu__block_porto">
+            <div class="menu__slider">
+              <div class="menu__slide">
+                <div class="menu__name">Вина</div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Винное меню">
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide">
+                <div class="menu__name">Винные коктейли</div>
+                <div class="menu__img">
+                  <img src="img/porto/menu-img.jpg" alt="Винное меню">
+                  <a data-fancybox href="img/porto/menu-img.jpg" class="menu__button menu__button_green-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coffee coffee_porto">
+      <div class="coffee__img coffee__img_left">
+        <img src="img/bean.png" alt="Кофейные зерна">
+      </div>
+      <div class="container container_porto_small">
+        <h2 class="coffee__title">
+      Авторский кофе завтрак
+    </h2>
+        <div class="coffee__list coffee__list_margin-bottom-0">
+          <div class="coffee__item">
+            <div class="coffee__name">Лавандовый раф</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">200&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Цитрусовый раф</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">200&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Бородинский латте</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">180&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Латте халва</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">180&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Латте лимонный пирог</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">180&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Латте соленая карамель</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">180&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Пряный мексиканский мокко</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">200&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Nitro кофе</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">250&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Аффогато-сет</div>
+            <div class="coffee__weight">300 мл</div>
+            <div class="coffee__price">190&nbsp;р</div>
+          </div>
+        </div>
+      </div>
+      <div class="coffee__img coffee__img_right">
+        <img src="img/coffee-cup.png" alt="Кофейная чашка">
+      </div>
+    </section>
+
+    <section class="methods">
+      <div class="container">
+        <h2 class="methods__title title title_alt title_alt_black">
+      <span class="title__content">Способы приготовления</span>
+    </h2>
+        <div class="methods__container">
+          <div class="methods__block">
+            <div class="methods__icon">
+              <img src="img/porto/kemeks.png" alt="Кемекс">
+            </div>
+            <h3 class="methods__subtitile">Кемекс</h3>
+            <p class="methods__descr">
+              Приготовление кофе с помощью кемекса позволяет получить напиток с особенно нежным вкусом, глубоким ароматом и умеренной крепостью
+            </p>
+          </div>
+          <div class="methods__block">
+            <div class="methods__icon">
+              <img src="img/porto/v-60.png" alt="V-60">
+            </div>
+            <h3 class="methods__subtitile">V 60</h3>
+            <p class="methods__descr">
+              Приготовление кофе с помощью кемекса позволяет получить напиток с особенно нежным вкусом, глубоким ароматом и умеренной крепостью
+            </p>
+          </div>
+          <div class="methods__block">
+            <div class="methods__icon">
+              <img src="img/porto/aeropress.png" alt="Аэропресс">
+            </div>
+            <h3 class="methods__subtitile">Аэропресс</h3>
+            <p class="methods__descr">
+              Приготовление кофе с помощью кемекса позволяет получить напиток с особенно нежным вкусом, глубоким ароматом и умеренной крепостью
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__title title">
+      <span class="title__content">О нас</span>
+    </h2>
+        <div class="about-us__container">
+          <div class="about-us__descr">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida.
+            </p>
+            <p>
+              Proin sodales pulvinar sic tempor. Sociis natoque penati bus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra pronin sapien nunc accuan eget.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida. Proin sodales pulvinar sic tempor.
+            </p>
+          </div>
+          <div class="about-us__img">
+            <img src="img/porto/about-us-img.jpg" alt="Кофейня">
+          </div>
+        </div>
+        <div class="about-us__team team-slider">
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+          <div class="team-slider__slide">
+            <div class="team-slider__content">
+              <div class="team-slider__img">
+                <img src="img/porto/team-member.jpg" alt="Член команды">
+              </div>
+              <h3 class="team-slider__name">Иван Иванов</h3>
+              <div class="team-slider__descr">Бариста</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-container info-container_porto">
+      <section id="counter" class="info info_reverse">
+        <div class="info__img">
+          <img src="img/porto/wine.jpg" alt="Фотография вина">
+        </div>
+        <div class="info__descr statistics statistics_margin-top statistics_text-align-right">
+          <div class="statistics__amount statistics__amount_line-left _counter-value" data-count="12354">0</div>
+          <div class="statistics__text">бутылок вина открыто</div>
+        </div>
+      </section>
+
+      <section id="counter" class="info">
+        <div class="info__img">
+          <img src="img/porto/coffee.jpg" alt="Фотография кофе">
+        </div>
+        <div class="info__descr statistics statistics_margin-bottom">
+          <div class="statistics__amount statistics__amount_line-right _counter-value" data-count="19856">0</div>
+          <div class="statistics__text">чашек кофе сварено</div>
+        </div>
+      </section>
+
+    </div>
+    <section id="reviews" class="reviews reviews_porto">
+      <div class="container">
+        <h2 class="reviews__title reviews__title_porto title">
+      <span class="title__content">Отзывы наших гостей</span>
+    </h2>
+        <div class="reviews__container">
+          <div class="reviews__photo">
+            <img src="img/manufactura/reviews-photo.png" alt="Фотография автора отзыва">
+          </div>
+          <div class="reviews__text">
+            <p class="reviews__paragraph">
+              Очень хочу поделиться впечатлением от посещения Resto. Первое, что могу сказать: "Рекомендую посетить!!"
+            </p>
+            <p class="reviews__paragraph">
+              Была с сыном. Он вообще в восторге от пиццы, а про десерт чизкейк орио вообще сказал, что это самое вкусное пирожное, что он когда-либо ел!!) Я очень хотела попробовать пасту неро с морепродуктами и это было ооочень вкусно!!! Крамбл с яблоками и черникой
+              просто класс!! Сочетание сладости и кислинка, которую придаёт черника, просто вау!! И что порадовало, особенно,несмотря на постоянный поток посетителей, паники среди персонала не было. Обслуживание хорошее, быстрое, даже не заметили сколько
+              по времени ждали заказ!!
+            </p>
+            <div class="reviews__author">
+              <span class="reviews__author-name">Катерина Некипелова</span>
+              <a href="https://vk.com/id31079567" class="reviews__author-link reviews__author-link_green">https://vk.com/id31079567</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="news news_porto">
+      <h2 class="news__main-title">Новости и события</h2>
+      <div class="container">
+        <div class="news__slider">
+          <div class="news__block news__block_with-gradient">
+            <div class="news__date news__date_white-color">6 июня</div>
+            <div class="news__body news__body_padding-0">
+              <div>
+                <h3 class="news__title">
+              Новые бранчи
+            </h3>
+                <p class="news__descr news__descr_white-color">
+                  Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_white-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              DJ SHAKER
+              и&nbsp;ДАНИЛ АКИМОВ
+            </h3>
+                <p class="news__descr">
+                  Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_gold-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              Ksusha Neva
+            </h3>
+                <p class="news__descr">
+                  В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_black-bg button_black-bg_no-margin">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_with-gradient">
+            <div class="news__date news__date_white-color">6 июня</div>
+            <div class="news__body news__body_padding-0">
+              <div>
+                <h3 class="news__title">
+              Новые бранчи
+            </h3>
+                <p class="news__descr news__descr_white-color">
+                  Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_white-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              DJ SHAKER
+              и&nbsp;ДАНИЛ АКИМОВ
+            </h3>
+                <p class="news__descr">
+                  Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_gold-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              Ksusha Neva
+            </h3>
+                <p class="news__descr">
+                  В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_black-bg button_black-bg_no-margin">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs" class="jobs">
+      <div class="container">
+        <h2 class="jobs__title jobs__title_big-margin-bottom title">
+      <span class="title__content">Вакансии в Port-o-coffee</span>
+    </h2>
+        <div class="jobs__subtitle">Port-o-Coffee для сотрудников – это:</div>
+        <ul class="jobs__list">
+          <li class="jobs__advantage">
+            отличная возможность стать частью молодой команды
+          </li>
+          <li class="jobs__advantage">
+            возможность профессионально вырасти в амбициозном проекте
+          </li>
+          <li class="jobs__advantage">
+            участие в запуске нового международного бренда
+          </li>
+          <li class="jobs__advantage">
+            уверенность в завтрашнем дне
+          </li>
+        </ul>
+        <div class="jobs__container">
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts contacts_porto">
+      <div class="container">
+        <div class="contacts__container">
+          <div class="contacts__info contacts__info_big-padding-bottom">
+            <div class="contacts__actions">
+              <button class="contacts__button button button_big button_black-bordered button_white-color">Контакты</button>
+              <button class="contacts__button button button_big button_black-bordered button_white-color">Оставьте отзыв</button>
+              <button class="contacts__button button button_big button_black-bordered button_white-color">Арендодателям</button>
+              <button class="contacts__button button button_big button_black-bordered button_white-color">Поставщикам</button>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Адрес:
+              </div>
+              <div class="contacts__text">
+                Ул. К. Маркса, 18
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Телефон:
+              </div>
+              <div class="contacts__text">
+                <a href="tel:389973">38-99-73</a>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Режим работы:
+              </div>
+              <div class="contacts__text contacts__text_line-height">
+                Вс-Чт:&nbsp;09:00&nbsp;-&nbsp;23:00
+                <br />Пт-Сб:&nbsp;09:00&nbsp;-&nbsp;04:00
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map" style="display:none">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__col">
+          (с) Port-o-Coffe, 2018
+        </div>
+        <div class="footer__col footer__col_text-center">
+          <a class='footer__link' href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__col footer__col_text-right">
+          Сделано в <a class="footer__link footer__link_green" href="">Cody Art</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Resto-Presto</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body class="resto">
+  <header class="header header_resto">
+    <div class="header__container container">
+      <a onclick="scrollToTop();return false" class="header__logo-container">
+        <img src="img/resto/logo.png" alt="Логотип" class="header__logo">
+      </a>
+      <button class="burger _open-menu"></button>
+      <nav class="nav nav_resto nav_desktop">
+        <a href="#menu" class="nav__link nav__link_bright-green-border">Меню</a>
+        <a href="" class="nav__link nav__link_bright-green-border">Доставка</a>
+        <a href="#reviews" class="nav__link nav__link_bright-green-border">Отзывы</a>
+        <a href="#news" class="nav__link nav__link_bright-green-border">Новости и акции</a>
+        <a href="#jobs" class="nav__link nav__link_bright-green-border">Вакансии</a>
+        <a href="#contacts" class="nav__link nav__link_bright-green-border">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu mobile-menu_resto _menu">
+    <button class="mobile-menu__close _close-menu"></button>
+    <nav class="nav nav_direction-column">
+      <div class="nav__item">
+        <a href="#menu" class="nav__link">Меню</a>
+      </div>
+      <div class="nav__item">
+        <a href="" class="nav__link">Доставка</a>
+      </div>
+      <div class="nav__item">
+        <a href="#reviews" class="nav__link">Отзывы</a>
+      </div>
+      <div class="nav__item">
+        <a href="#news" class="nav__link">Новости и акции</a>
+      </div>
+      <div class="nav__item">
+        <a href="#jobs" class="nav__link">Вакансии</a>
+      </div>
+      <div class="nav__item">
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="wrapper">
+    <section id="first-slide" data-parallax="scroll" data-image-src="/img/resto/resto-bg.jpg" class="first-slide first-slide_resto _parallax-window-resto">
+      <div class="container first-slide__container">
+        <h1 class="first-slide__title first-slide__title_resto">
+      Классика итальянской кухни
+    </h1>
+        <div class="first-slide__subtitle first-slide__subtitle_resto">
+          в авторском исполнении
+        </div>
+        <div class="first-slide__btn-container">
+          <button class="button button_resto button_bright-green-bg">Забронировать столик</button>
+        </div>
+        <div class="first-slide__links landing-nav landing-nav_resto">
+          <div class="landing-nav__block">
+            <a href="porto.html" class="landing-nav__link">
+          Port&nbsp;o<br />
+          coffee
+        </a>
+          </div>
+          <div class="landing-nav__block">
+            <a href="manufactura.html" class="landing-nav__link">
+          Port&nbsp;o<br />
+          Manufaktura
+        </a>
+          </div>
+          <div class="landing-nav__block landing-nav__block_active">
+            <a href="resto.html" class="landing-nav__link landing-nav__link_active">
+          Resto<br />
+          Presto
+        </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu menu_resto">
+      <div class="container">
+        <h2 class="menu__title menu__title_small-margin-bottom title title_big-height title_bright-green-line">
+      <span class="title__content">Меню</span>
+    </h2>
+        <div class="menu__container">
+          <div class="menu__block menu__block_resto">
+            <div class="menu__slider">
+              <div class="menu__slide menu__slide_dark-gray">
+                <div class="menu__name menu__name_dark-gray-bg">
+                  <span class="menu__text">
+                Кухня
+              </span>
+                </div>
+                <div class="menu__img">
+                  <img src="img/resto/menu-img.jpg" alt="Меню" />
+                  <a data-fancybox href="img/resto/menu-img.jpg" class="menu__button menu__button_bright-green-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide menu__slide_dark-gray">
+                <div class="menu__name menu__name_dark-gray-bg">
+                  <span class="menu__text">
+                Кухня
+              </span>
+                </div>
+                <div class="menu__img">
+                  <img src="img/resto/menu-img.jpg" alt="Меню" />
+                  <a data-fancybox href="img/resto/menu-img.jpg" class="menu__button menu__button_bright-green-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__block menu__block_resto">
+            <div class="menu__slider">
+              <div class="menu__slide menu__slide_dark-gray">
+                <div class="menu__name menu__name_dark-gray-bg">Барная карта</div>
+                <div class="menu__img">
+                  <img src="img/resto/menu-img-bar.jpg" alt="Барная карта">
+                  <a data-fancybox href="img/resto/menu-img-bar.jpg" class="menu__button menu__button_bright-green-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide menu__slide_dark-gray">
+                <div class="menu__name menu__name_dark-gray-bg">Барная карта</div>
+                <div class="menu__img">
+                  <img src="img/resto/menu-img-bar.jpg" alt="Барная карта">
+                  <a data-fancybox href="img/resto/menu-img-bar.jpg" class="menu__button menu__button_bright-green-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us about-us_resto">
+      <div class="container container_resto_small">
+        <div class="about-us__container about-us__container_resto">
+          <h2 class="about-us__title about-us__title_small-margin-bottom title title_alt title_big-height title_bright-green-line">
+        <span class="title__content title__content_transparent-bg">О нас</span>
+      </h2>
+          <div class="about-us__descr about-us__descr_resto">
+            <p>
+              Настоящий гастрономический театр и просто место, где можно будет попробовать классику итальянской кухни в авторском исполнении.
+            </p>
+            <p>
+              Мы готовим всем знакомые блюда, но из сезонных продуктов и с уважением к традициям и современным техникам приготовления. У нас будет целая коллекция крафтовых бургеров, специальная овальная римская пицца, которую будем готовить в печи, а гостям выносить
+              на досках. Много пасты и много фермерского мяса, приготовленного на гриле. Поэтому приходите обязательно: будет вкусно всем.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-container info-container_resto">
+      <section class="info">
+        <div class="info__img">
+          <img src="img/resto/place-img.jpg" alt="Фотография заведения">
+        </div>
+        <div class="info__descr info__descr_margin-top">
+          <h2 class="info__title info__title_bright-green">Где находится?</h2>
+          <p class="info__text">
+            Resto-presto находится в центре Калининграда, на 1 этаже здания городской мэрии. Из панорамных окон открывается вид на сердце города — Площадь Победы, оживленные улицы и перекрестки. Возле ресторана крытые и открытые парковки, рядом транспортные остановки,
+            с которых можно добраться до любой точки города.
+          </p>
+        </div>
+      </section>
+
+      <section class="info info_reverse">
+        <div class="info__img">
+          <img src="img/resto/place-img-2.jpg" alt="Фотография заведения">
+        </div>
+        <div class="info__descr info__descr_small-margin-bottom">
+          <h2 class="info__title info__title_bright-green">Что собой <br />представляет?</h2>
+          <p class="info__text">
+            Бистро: кафе-ресторан с популярными блюдами европейской кухни в авторской подаче.
+          </p>
+          <p class="info__text">
+            В заведении два зала. Тот, что на входе — уютный, семейный, с деревянными столами и стульями, высоким узким столом вдоль окна и открытой кухней. Здесь есть диджейская стойка и музыкальная аппаратура, в этом зале начиная с пятницы вечера проходят вечеринки
+            для взрослых, а днем, по выходным — мероприятия для детей.
+          </p>
+          <p class="info__text">
+            Второй зал — солидный, строгий, но уютный. Здесь мягкие кожаные диваны для больших компаний, барная стойка. На втором этаже детская комната.
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <section id="reviews" class="reviews reviews_resto">
+      <div class="container">
+        <h2 class="reviews__title reviews__title_alt-font reviews__title_porto title title_big-height title_bright-green-line">
+      <span class="title__content">Отзывы наших клиентов</span>
+    </h2>
+        <div class="reviews__container">
+          <div class="reviews__photo">
+            <img src="img/manufactura/reviews-photo.png" alt="Фотография автора отзыва">
+          </div>
+          <div class="reviews__text">
+            <div>
+              <p class="reviews__paragraph">
+                Очень хочу поделиться впечатлением от посещения Resto. Первое, что могу сказать: "Рекомендую посетить!!"
+              </p>
+              <p class="reviews__paragraph">
+                Была с сыном. Он вообще в восторге от пиццы, а про десерт чизкейк орио вообще сказал, что это самое вкусное пирожное, что он когда-либо ел!!) Я очень хотела попробовать пасту неро с морепродуктами и это было ооочень вкусно!!! Крамбл с яблоками и черникой
+                просто класс!! Сочетание сладости и кислинка, которую придаёт черника, просто вау!! И что порадовало, особенно,несмотря на постоянный поток посетителей, паники среди персонала не было. Обслуживание хорошее, быстрое, даже не заметили сколько
+                по времени ждали заказ!!
+              </p>
+            </div>
+            <div class="reviews__author">
+              <span class="reviews__author-name reviews__author-name_resto-font">Катерина Некипелова</span>
+              <a href="https://vk.com/id31079567" class="reviews__author-link reviews__author-link_resto-font reviews__author-link_bright-green">https://vk.com/id31079567</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-container info-container_resto">
+      <section class="info">
+        <div class="info__img">
+          <img src="img/resto/about-food-img.jpg" alt="Фотография повара">
+        </div>
+        <div class="info__descr info__descr_medium-margin-top">
+          <h2 class="info__title info__title_bright-green">Что по еде?</h2>
+          <p class="info__text">
+            Завтраки до 12, просто хорошие обеды с 12 до 15.
+          </p>
+          <p class="info__text">
+            В Resto-presto есть французские круассаны и американские бургеры, пиццы и пасты по итальянской рецептуре, ризотто, кенигсбергские клопсы, тайские и традиционные европейские супы, блюда из мяса, птицы, рыбы и морепродуктов. Готовят на гриле. Отдельно стоит
+            отметить пиццы! Они в Resto-presto одни из самых больших в городе — длиной до 1 метра, весом до 1300 г. Такие пиццы — на тонком тесте и с разными начинками, удобно заказывать на большие компании, как и закуски.
+          </p>
+          <p class="info__text">
+            В Resto-presto хороший выбор пивных наборов, закусок к вину, мясных, сырных и овощных закусок.
+          </p>
+        </div>
+      </section>
+
+      <section class="info info_reverse">
+        <div class="info__img">
+          <img src="img/resto/about-drinks-img.jpg" alt="Фотография напитков">
+        </div>
+        <div class="info__descr">
+          <h2 class="info__title info__title_bright-green">Что по напиткам?</h2>
+          <p class="info__text">
+            Напитки в Resto-presto согревают и освежают.
+            <br />Из ресторанно-кофейной классики представлено все: от чая и кофе до смузи, молочных коктейлей и свежевыжатых соков. Хороший выбор вин из Италии, Франции, Португалии, США. Есть крепкий алкоголь, фирменные настойки на основе водки, коктейли.
+          </p>
+          <p class="info__text">
+            На «кофе с собой» действуют скидки до 30%.
+          </p>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__img">
+          <img src="img/resto/about-price-img.jpg" alt="Фотография официанта">
+        </div>
+        <div class="info__descr info__descr_small-padding-bottom info__descr_small-margin-bottom">
+          <h2 class="info__title info__title_bright-green">Что по чем?</h2>
+          <p class="info__text">
+            Разнообразные завтраки по и комплексные ланчи по привлекательным ценам. (или: Завтраки и обеды по цене выходят едва ли не дешевле, чем если готовить самостоятельно!) В стоимость обеда включен напиток на выбор, с большой скидкой можно заказать капучино,
+            десерт дня или фирменный компот.
+          </p>
+          <p class="info__text">
+            Пиццы от 297 рублей за 440 грамм, самая дорогая «прошутто котто и грибы» весом 1,3 кг стоит 973 рубля.
+          </p>
+          <p class="info__text">
+            Салат+горячее+десерт или выпечка обойдется в среднем 900 рублей на одного.
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <section id="news" class="news news_resto">
+      <h2 class="news__main-title">Новости и события</h2>
+      <div class="container">
+        <div class="news__slider">
+          <div class="news__block news__block_with-gradient">
+            <div class="news__date news__date_white-color">6 июня</div>
+            <div class="news__body news__body_padding-0">
+              <div>
+                <h3 class="news__title">
+              Новые бранчи
+            </h3>
+                <p class="news__descr news__descr_white-color">
+                  Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_white-bg button_white-color button_white-bg_gray-color">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              DJ SHAKER
+              и&nbsp;ДАНИЛ АКИМОВ
+            </h3>
+                <p class="news__descr">
+                  Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_bright-green-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              Ksusha Neva
+            </h3>
+                <p class="news__descr">
+                  В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_dark-gray-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_with-gradient">
+            <div class="news__date news__date_white-color">6 июня</div>
+            <div class="news__body news__body_padding-0">
+              <div>
+                <h3 class="news__title">
+              Новые бранчи
+            </h3>
+                <p class="news__descr news__descr_white-color">
+                  Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_white-bg button_white-color button_white-bg_gray-color">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              DJ SHAKER
+              и&nbsp;ДАНИЛ АКИМОВ
+            </h3>
+                <p class="news__descr">
+                  Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_bright-green-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="news__block news__block_small">
+            <div class="news__img">
+              <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+            </div>
+            <div class="news__body">
+              <div>
+                <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+              Ksusha Neva
+            </h3>
+                <p class="news__descr">
+                  В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                </p>
+              </div>
+              <div>
+                <a class="news__button button button_resto button_resto_weight-700 button_dark-gray-bg">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-container info-container_resto">
+      <section class="info">
+        <div class="info__img">
+          <img src="img/resto/about-children-img.jpg" alt="Фотография детей">
+        </div>
+        <div class="info__descr info__descr_margin-top">
+          <h2 class="info__title info__title_bright-green">В resto-presto <br />с детьми</h2>
+          <p class="info__text">
+            Каждые выходные для детей проходят кулинарные мастер-классы, на которых малыши под чутким присмотром повора ресторана готовят пиццу, макароны, десерты. Юных поварят угощают традиционными компотиками из ягод.
+          </p>
+          <p class="info__text">
+            Несколько раз в месяц ресторан приглашает артистов и аниматоров, организует бумажные вечеринки.
+          </p>
+          <p class="info__text">
+            В Resto-presto есть детское меню с блюдами, любимыми всеми малышами, и детская комната на втором этаже.
+          </p>
+        </div>
+      </section>
+
+      <section class="info info_reverse">
+        <div class="info__img">
+          <img src="img/resto/about-events-img.jpg" alt="Фотография мероприятия">
+        </div>
+        <div class="info__descr">
+          <h2 class="info__title info__title_bright-green">Мероприятия <br />resto-presto?</h2>
+          <p class="info__text">
+            Начиная с пятницы играют диджеи и выступают музыканты, по выходным гостей учат танцевать латинские танцы. Летом 2018 года Resto-presto принял региональный этап Всероссийского Чемпионата Бариста, а в период Чемпионата Мира по футболу — тысячи футбольных
+            болельщиков из России и стран-визитёров.
+          </p>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__img">
+          <img src="img/resto/about-guest-img.jpg" alt="Фотография гостей">
+        </div>
+        <div class="info__descr info__descr_margin-bottom">
+          <h2 class="info__title info__title_bright-green">Гости resto-presto</h2>
+          <p class="info__text">
+            0+
+          </p>
+          <p class="info__text">
+            Здесь завтракают перед работой и учебой, т.к. ресторан открывается уже в 8, обедают те, кто работает в центре города. Вечером в бистро много молодых пар, семей, компаний друзей. Здесь часто отмечают дни рождение и прочие важные события. Именинников ждёт
+            презент от ресторана.
+          </p>
+          <p class="info__text">
+            Для постоянных гостей заведения действует программа лояльности. В мобильном приложении Resto-presto перечислены все акции, скидки и розыгрыши, которые делают отдых не только вкусным, но и выгодным.
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <section id="jobs" class="jobs">
+      <div class="container">
+        <h2 class="jobs__title jobs__title_big-margin-bottom title title_big-height title_bright-green-line">
+      <span class="title__content">Вакансии в Resto-presto</span>
+    </h2>
+        <div class="jobs__subtitle">Resto-Presto для сотрудников – это:</div>
+        <ul class="jobs__list">
+          <li class="jobs__advantage">
+            отличная возможность стать частью молодой команды
+          </li>
+          <li class="jobs__advantage">
+            возможность профессионально вырасти в амбициозном проекте
+          </li>
+          <li class="jobs__advantage">
+            участие в запуске нового международного бренда
+          </li>
+          <li class="jobs__advantage">
+            уверенность в завтрашнем дне
+          </li>
+        </ul>
+        <div class="jobs__container">
+          <div class="jobs__offer">
+            <div class="accordion accordion_dark-gray-border jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel panel_dark-gray-border">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_resto button_bright-green-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion accordion_dark-gray-border jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel panel_dark-gray-border">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_resto button_bright-green-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion accordion_dark-gray-border jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel panel_dark-gray-border">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_resto button_bright-green-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts contacts_resto">
+      <div class="container">
+        <div class="contacts__container">
+          <div class="contacts__info contacts__info_big-padding-bottom">
+            <div class="contacts__actions">
+              <button class="contacts__button contacts__button_font-size-16 button button_big button_big_resto button_white-bordered">Контакты</button>
+              <button class="contacts__button contacts__button_font-size-16 button button_big button_big_resto button_white-bordered">Оставьте отзыв</button>
+              <button class="contacts__button contacts__button_font-size-16 button button_big button_big_resto button_white-bordered">Арендодателям</button>
+              <button class="contacts__button contacts__button_font-size-16 button button_big button_big_resto button_white-bordered">Поставщикам</button>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Адрес:
+              </div>
+              <div class="contacts__text">
+                Площадь Победы, 1
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Телефон:
+              </div>
+              <div class="contacts__text">
+                <a href="tel:388478">38-84-78</a>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Режим работы:
+              </div>
+              <div class="contacts__text contacts__text_line-height">
+                Пн-Чт:&nbsp;08:00&nbsp;-&nbsp;23:00
+                <br />Пт:&nbsp;08:00&nbsp;-&nbsp;02:00
+                <br />Сб:&nbsp;09:00&nbsp;-&nbsp;02:00
+                <br />Вс:&nbsp;09:00&nbsp;-&nbsp;23:00
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map" style="display:none">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__col">
+          (с) Port-o-Coffe, 2018
+        </div>
+        <div class="footer__col footer__col_text-center">
+          <a class='footer__link' href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__col footer__col_text-right">
+          Сделано в <a class="footer__link footer__link_alt-green" href="">Cody Art</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
