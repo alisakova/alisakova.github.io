@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Porto O Manufactura</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a onclick="scrollToTop();return false" class="header__logo-container">
+        <img src="img/manufactura/logo-manufactura.png" alt="Логотип" class="header__logo">
+      </a>
+      <button class="burger _open-menu"></button>
+      <nav class="nav nav_desktop">
+        <a href="#menu" class="nav__link nav__link_gold-border">Меню</a>
+        <a href="" class="nav__link nav__link_gold-border">Доставка</a>
+        <a href="#reviews" class="nav__link nav__link_gold-border">Отзывы</a>
+        <a href="#news" class="nav__link nav__link_gold-border">Новости и акции</a>
+        <a href="#jobs" class="nav__link nav__link_gold-border">Вакансии</a>
+        <a href="#contacts" class="nav__link nav__link_gold-border">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu _menu">
+    <button class="mobile-menu__close _close-menu"></button>
+    <nav class="nav nav_direction-column">
+      <div class="nav__item">
+        <a href="#menu" class="nav__link">Меню</a>
+      </div>
+      <div class="nav__item">
+        <a href="" class="nav__link">Доставка</a>
+      </div>
+      <div class="nav__item">
+        <a href="#reviews" class="nav__link">Отзывы</a>
+      </div>
+      <div class="nav__item">
+        <a href="#news" class="nav__link">Новости и акции</a>
+      </div>
+      <div class="nav__item">
+        <a href="#jobs" class="nav__link">Вакансии</a>
+      </div>
+      <div class="nav__item">
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="wrapper">
+    <section id="first-slide" data-parallax="scroll" data-image-src="/img/manufactura/first-slide-bg.png" class="first-slide first-slide_manufactura _parallax-window">
+      <div class="container first-slide__container">
+        <h1 class="first-slide__title">
+      Кофейня, ростерия, бар
+    </h1>
+        <div class="first-slide__btn-container">
+          <button class="button button_gold-bg">Забронировать столик</button>
+          <button class="button button_gold-bordered">Заказать доставку</button>
+        </div>
+        <div class="first-slide__links landing-nav">
+          <div class="landing-nav__block">
+            <a href="porto.html" class="landing-nav__link">
+          Port&nbsp;o<br />
+          coffee
+        </a>
+          </div>
+          <div class="landing-nav__block landing-nav__block_active">
+            <a href="manufactura.html" class="landing-nav__link landing-nav__link_active">
+          Port&nbsp;o<br />
+          Manufaktura
+        </a>
+          </div>
+          <div class="landing-nav__block">
+            <a href="resto.html" class="landing-nav__link">
+          Resto<br />
+          Presto
+        </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="menu__title title">
+      <span class="title__content">Меню</span>
+    </h2>
+        <div class="menu__container">
+          <div class="menu__block">
+            <div class="menu__slider">
+              <div class="menu__slide">
+                <div class="menu__name">Кофе</div>
+                <div class="menu__img">
+                  <img src="img/menu-img.png" alt="Кофейное меню" />
+                  <a data-fancybox href="img/menu-img.png" class="menu__button menu__button_gold-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide">
+                <div class="menu__name">Чай</div>
+                <div class="menu__img">
+                  <img src="img/menu-img.png" alt="Чайное меню">
+                  <a data-fancybox href="img/menu-img.png" class="menu__button menu__button_gold-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__block">
+            <div class="menu__slider">
+              <div class="menu__slide">
+                <div class="menu__name">Десерты</div>
+                <div class="menu__img">
+                  <img src="img/menu-img.png" alt="Десертное меню">
+                  <a data-fancybox href="img/menu-img.png" class="menu__button menu__button_gold-hover"></a>
+                </div>
+              </div>
+              <div class="menu__slide">
+                <div class="menu__name">Горячие блюда</div>
+                <div class="menu__img">
+                  <img src="img/menu-img.png" alt="Сытное меню">
+                  <a data-fancybox href="img/menu-img.png" class="menu__button menu__button_gold-hover"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coffee">
+      <div class="coffee__img coffee__img_left">
+        <img src="img/bean.png" alt="Кофейные зерна">
+      </div>
+      <div class="container container_small">
+        <h2 class="coffee__title">
+      Свежий кофе
+    </h2>
+        <div class="coffee__list">
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Deorsola Premium</div>
+            <div class="coffee__country">Италия</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">800&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Matic Extra</div>
+            <div class="coffee__country">Франция</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">500&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Caffé Veloce Lusso</div>
+            <div class="coffee__country">Испания</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">400&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Caffé Veloce Crema</div>
+            <div class="coffee__country">Италия</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">800&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Deorsola Premium</div>
+            <div class="coffee__country">Италия</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">800&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Matic Extra</div>
+            <div class="coffee__country">Франция</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">500&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Caffé Veloce Lusso</div>
+            <div class="coffee__country">Испания</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">400&nbsp;р</div>
+          </div>
+          <div class="coffee__item">
+            <div class="coffee__name">Кофе в зернах Caffé Veloce Crema</div>
+            <div class="coffee__country">Италия</div>
+            <div class="coffee__weight">1 кг</div>
+            <div class="coffee__price">800&nbsp;р</div>
+          </div>
+        </div>
+        <a class="button button_black-bg">Перейти в магазин</a>
+      </div>
+      <div class="coffee__img coffee__img_right">
+        <img src="img/coffee-cup.png" alt="Кофейная чашка">
+      </div>
+    </section>
+
+    <div class="info-container">
+      <section class="info">
+        <div class="info__img">
+          <img src="img/manufactura/info-place.png" alt="Фотография кофейни">
+        </div>
+        <div class="info__descr info__descr_margin-top">
+          <h2 class="info__title">Где находится?</h2>
+          <p class="info__text">
+            Port-o-manufactura найдёте в центре деловой и модной жизни Калининграда — в ТРЦ «Европа». Кофейня – концептуально новый проект от создателей Port-o-соffee.
+          </p>
+        </div>
+      </section>
+
+      <section class="info info_reverse">
+        <div class="info__img">
+          <img src="img/manufactura/info-coffee.png" alt="Фотография кофемашины">
+        </div>
+        <div class="info__descr info__descr_margin-bottom">
+          <h2 class="info__title">Как насчет кофе?</h2>
+          <p class="info__text">
+            О кофе здесь знают всё.
+          </p>
+          <p class="info__text">
+            В Port-o-manufactura кофе не только варят, но и жарят. Зерна тщательно отбирают, чтобы подать гостям напиток, который влюбит в себя раз и навсегда. Раскрыть вкус кофе удаётся за счет аэропресса, харио, кемекса. Каждый способ требует знаний, навыков и
+            опыта: у бариста Port-o-manufactura они есть.
+          </p>
+          <p class="info__text">
+            В Port-o-manufactura готовят кофейную классику и авторский кофе по оригинальной рецептуре на основе натуральных заготовок. По желанию кофе подадут с молоком — обычным или растительным. На выбор: соевое, миндальное, кокосовое, обезжиренное молоко.
+          </p>
+          <p class="info__text">
+            Приготовление каждой чашки — процесс, за которым наблюдаешь, как за рождением шедевра.
+          </p>
+          <p class="info__text">
+            Есть освежающие лимонады, какао и горячий шоколад, милк-шейки, фруктово-ягодные смузи, ароматные фирменные чаи.
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h2 class="reviews__title title">
+      <span class="title__content">Отзывы наших гостей</span>
+    </h2>
+        <div class="reviews__container">
+          <div class="reviews__photo">
+            <img src="img/manufactura/reviews-photo.png" alt="Фотография автора отзыва">
+          </div>
+          <div class="reviews__text">
+            <p class="reviews__paragraph">
+              Очень хочу поделиться впечатлением от посещения Resto. Первое, что могу сказать: "Рекомендую посетить!!"
+            </p>
+            <p class="reviews__paragraph">
+              Была с сыном. Он вообще в восторге от пиццы, а про десерт чизкейк орио вообще сказал, что это самое вкусное пирожное, что он когда-либо ел!!) Я очень хотела попробовать пасту неро с морепродуктами и это было ооочень вкусно!!! Крамбл с яблоками и черникой
+              просто класс!! Сочетание сладости и кислинка, которую придаёт черника, просто вау!! И что порадовало, особенно,несмотря на постоянный поток посетителей, паники среди персонала не было. Обслуживание хорошее, быстрое, даже не заметили сколько
+              по времени ждали заказ!!
+            </p>
+            <div class="reviews__author">
+              <span class="reviews__author-name">Катерина Некипелова</span>
+              <a href="https://vk.com/id31079567" class="reviews__author-link">https://vk.com/id31079567</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="info-container">
+      <section class="info">
+        <div class="info__img">
+          <img src="img/manufactura/info-food.png" alt="Фотография еды">
+        </div>
+        <div class="info__descr info__descr_big-margin-top info__descr_alt-padding-top">
+          <h2 class="info__title">Как насчет еды?</h2>
+          <p class="info__text">
+            В кофейне обширное авторское меню. Завтраки доступны весь день. На выбор: тончайшие французские блинчики - крепы, тортильи, каши, сырники и творог, яйца с сыром и без, сытные мясные блюда.
+          </p>
+          <p class="info__text">
+            Бургеры и итальянские пиццы готовят с не меньшим професионализмом и отдачей, чем вторые блюда. Здесь здоровая еда! Мясо и птицу закупают у проверенных поставщиков, используют свежие овощи, для гарниров выбирают продукты высшего качества.
+          </p>
+        </div>
+      </section>
+
+      <section class="info info_reverse">
+        <div class="info__img">
+          <img src="img/manufactura/info-price.png" alt="Оплата в заведениях">
+        </div>
+        <div class="info__descr info__descr_alt-padding-top">
+          <h2 class="info__title">Цены</h2>
+          <p class="info__text">
+            Кофе стоит от 70 рублей, авторский — от 145 рублей. На «кофе с собой» действуют скидки. Завтрак в среднем обойдется в 160 рублей, классический бургер стоит 199 рублей, простая пицца — 99 рублей.
+          </p>
+          <p class="info__text">
+            Салат+горячее+десерт в среднем будет стоить 700 рублей. Закуски — от 160 рублей. Сырная тарелка всего 350 рублей.
+          </p>
+          <p class="info__text">
+            В заведении планируются акции и скидки, программы лояльности для постоянных гостей.
+          </p>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__img">
+          <img src="img/manufactura/info-team.png" alt="Фотография команды">
+        </div>
+        <div class="info__descr info__descr_margin-bottom info__descr_alt-padding-top">
+          <h2 class="info__title">Команда</h2>
+          <p class="info__text">
+            Port-o-manufactura — отличный выбор для ланча посреди рабочего дня, завтрака — в будни и выходные, вечернего выхода с друзьями «в свет». Здесь время останавливается и учит наслаждаться моментом, кофе и жизнью.
+          </p>
+          <p class="info__text">
+            В кофейню приятно прийти одному или в компании, с любимым человеком или друзьями. Здесь рады детям, а дети рады отзывчивым официантам и оригинальным десертам.
+          </p>
+          <p class="info__text">
+            Port-o-manufactura — мекка для любителей кофе, вкусной еды и стильных интерьеров. Это про качественный кофе и любовь к людям.
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <section id="news" class="news">
+      <h2 class="news__main-title">Новости и события</h2>
+      <div class="container">
+        <div class="news__slider">
+          <div>
+            <div class="news__block news__block_with-gradient">
+              <div class="news__date news__date_white-color">6 июня</div>
+              <div class="news__body news__body_padding-0">
+                <div>
+                  <h3 class="news__title">
+                Новые бранчи
+              </h3>
+                  <p class="news__descr news__descr_white-color">
+                    Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_white-bg">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="news__block news__block_small">
+              <div class="news__img">
+                <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+              </div>
+              <div class="news__body">
+                <div>
+                  <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                  <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+                DJ SHAKER
+                и&nbsp;ДАНИЛ АКИМОВ
+              </h3>
+                  <p class="news__descr">
+                    Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_gold-bg">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="news__block news__block_small">
+              <div class="news__img">
+                <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+              </div>
+              <div class="news__body">
+                <div>
+                  <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                  <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+                Ksusha Neva
+              </h3>
+                  <p class="news__descr">
+                    В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_black-bg button_black-bg_no-margin">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="news__block news__block_with-gradient">
+              <div class="news__date news__date_white-color">6 июня</div>
+              <div class="news__body news__body_padding-0">
+                <div>
+                  <h3 class="news__title">
+                Новые бранчи
+              </h3>
+                  <p class="news__descr news__descr_white-color">
+                    Ежедневно по будням ждем вас с 11:00 и до 17:00 на завтраки, плавно перетекающие в обеды и бокальчик холодного белого... или красного
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_white-bg">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="news__block news__block_small">
+              <div class="news__img">
+                <img src="img/manufactura/slide-event-1.png" alt="Анонс события">
+              </div>
+              <div class="news__body">
+                <div>
+                  <div class="news__date news__date_small-margin-bottom">22 июня</div>
+                  <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+                DJ SHAKER
+                и&nbsp;ДАНИЛ АКИМОВ
+              </h3>
+                  <p class="news__descr">
+                    Ламповый звук старого доброго винила и CD или забористые ритмы Electro house
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_gold-bg">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="news__block news__block_small">
+              <div class="news__img">
+                <img src="img/manufactura/slide-event-2.png" alt="Анонс события">
+              </div>
+              <div class="news__body">
+                <div>
+                  <div class="news__date news__date_small-margin-bottom">6 марта</div>
+                  <h3 class="news__title news__title_black-color news__title_small-margin-bottom">
+                Ksusha Neva
+              </h3>
+                  <p class="news__descr">
+                    В PORTO на Черняховского и Маркса пройдёт серия soul-концертов Ксюши Невы!
+                  </p>
+                </div>
+                <div>
+                  <a class="news__button button button_black-bg button_black-bg_no-margin">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs" class="jobs">
+      <div class="container">
+        <h2 class="jobs__title title">
+      <span class="title__content">Вакансии в Port-o-manufactura</span>
+    </h2>
+        <div class="jobs__subtitle">Port-o-Manufactura для сотрудников – это:</div>
+        <ul class="jobs__list">
+          <li class="jobs__advantage">
+            отличная возможность стать частью молодой команды
+          </li>
+          <li class="jobs__advantage">
+            возможность профессионально вырасти в амбициозном проекте
+          </li>
+          <li class="jobs__advantage">
+            участие в запуске нового международного бренда
+          </li>
+          <li class="jobs__advantage">
+            уверенность в завтрашнем дне
+          </li>
+        </ul>
+        <div class="jobs__container">
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+          <div class="jobs__offer">
+            <div class="accordion jobs__accordion-title">
+              <div class="jobs__name">Бариста</div>
+              <div class="jobs__info">
+                <div class="jobs__address">Калининград, ул. Черняховского</div>
+                <div class="jobs__salary">от 30 000 р.</div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="jobs__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                </p>
+                <button class="jobs__button button button_black-bg">Откликнуться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts__container">
+          <div class="contacts__info">
+            <div class="contacts__actions">
+              <button class="contacts__button button button_big button_black-bordered">Контакты</button>
+              <button class="contacts__button button button_big button_black-bordered">Оставьте отзыв</button>
+              <button class="contacts__button button button_big button_black-bordered">Арендодателям</button>
+              <button class="contacts__button button button_big button_black-bordered">Поставщикам</button>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Адрес:
+              </div>
+              <div class="contacts__text">
+                Ул. Черняховского, 6а
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Телефон:
+              </div>
+              <div class="contacts__text">
+                <a href="tel:379828">37-98-28</a>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div class="contacts__subtitle">
+                Режим работы:
+              </div>
+              <div class="contacts__text contacts__text_line-height">
+                Пн-Чт:&nbsp;07:00&nbsp;-&nbsp;23:00
+                <br />Пт:&nbsp;07:00&nbsp;-&nbsp;02:00
+                <br />Сб:&nbsp;09:00&nbsp;-&nbsp;02:00
+                <br />Вс:&nbsp;09:00&nbsp;-&nbsp;23:00
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af95778bcd1b13de00c591f9cc09fdbb25aa5e93a5bc1bd1f3974bb4cf13e665a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__col">
+          (с) Port-o-Coffee, 2018
+        </div>
+        <div class="footer__col footer__col_text-center">
+          <a class='footer__link' href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__col footer__col_text-right">
+          Сделано в <a class="footer__link footer__link_gold" href="">Cody Art</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
