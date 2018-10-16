@@ -7,16 +7,87 @@
   <meta name="format-detection" content="telephone=no">
   <title>Porto O Coffee</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
+  <div id="order-table-porto" class="modal">
+    <a href="#" rel="modal:close" class="modal-close">
+      <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="1" d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#171717" />
+      </svg>
+    </a>
+    <h2 class="modal__title">
+    Забронировать<br />
+    <span class="smaller">столик в Porto-o-coffee</span>
+  </h2>
+    <form action="" class="form">
+      <div class="form__container">
+        <div class="form__col">
+          <div class="form__item">
+            <label for="name" class="form__label">Ваше имя</label>
+            <input id="name" type="text" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="date" class="form__label">Дата посещения</label>
+            <input id="date" type="text" class="form__input">
+          </div>
+          <div class="form__item">
+            <label class="form__label">Повод</label>
+            <div class="select-container select-container_green-arrow">
+              <select class="form__select select" name="occasion-porto">
+                <option value="occasion" selected>
+                  Праздник
+                </option>
+                <option value="occasion-1">
+                  Вечеринка
+                </option>
+                <option value="occasion-2">
+                  Торжество
+                </option>
+                <option value="occasion-3" class="small">
+                  Другое <span class="small">(укажите в комментарии)</span>
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form__col">
+          <div class="form__item">
+            <label for="tel" class="form__label">Ваш телефон</label>
+            <input id="tel" type="tel" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="guests" class="form__label">Количество гостей</label>
+            <input id="guests" type="number" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="comment" class="form__label">Комментарий</label>
+            <input id="comment" type="text" class="form__input">
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <label for="accept" class="form__label checkbox">
+          Я согласен с <a href="" class="checkbox__link">политикой обработки персональных данных</a>
+          <input id="accept" type="checkbox">
+          <span class="checkbox__checkmark"></span>
+        </label>
+      </div>
+      <button type="submit" class="button button_black-bg button_white-to-black-color">Забронировать столик</button>
+    </form>
+  </div>
+
   <header class="header header_porto">
     <div class="header__container container">
       <a onclick="scrollToTop();return false" class="header__logo-container">
@@ -72,7 +143,7 @@
           <span class="subtitle__text">Вино</span>
         </div>
         <div class="first-slide__btn-container">
-          <button class="button button_green-bg">Забронировать столик</button>
+          <button class="button button_green-bg _open-modal-porto">Забронировать столик</button>
           <button class="button button_green-bordered">Заказать доставку</button>
         </div>
         <div class="first-slide__links landing-nav landing-nav_porto">
