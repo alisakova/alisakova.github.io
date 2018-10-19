@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="background-layout">
+    <header class="header">
+      <div class="header__col header__col_left">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="header__col header__col_medium">
+        <button class="burger _open-menu"></button>
+        <nav class="nav nav_padding nav_desktop">
+          <div class="nav__item nav__item_dashboard">
+            <a href="index.html" class="nav__link nav__link_dashboard">Home</a>
+          </div>
+          <div class="nav__item nav__item_dashboard">
+            <a href="legal.html" class="nav__link nav__link_dashboard">Legal</a>
+          </div>
+          <div class="nav__item nav__item_dashboard">
+            <a href="faq.html" class="nav__link nav__link_dashboard">FAQ</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header__col header__col_right">
+        <div class="user-block">
+          <div class="user-block__mail">customer@mail.com</div>
+          <div class="user-block__info">
+            <div class="user-block__date">17-09-2018</div>
+            <div class="user-block__time">2.45 AM</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu _menu">
+      <button class="menu__close _close-menu"></button>
+      <nav class="nav nav_direction-column">
+        <div class="nav__item">
+          <a href="admin-transactios.html" class="nav__link nav__link_active">Transactions</a>
+        </div>
+        <div class="nav__item">
+          <a href="documents.html" class="nav__link">Documents</a>
+        </div>
+        <div class="nav__item">
+          <a href="" class="nav__link">Settings</a>
+        </div>
+        <div class="nav__item">
+          <a href="wallet.html" class="nav__link">Wallet</a>
+        </div>
+        <div class="nav__item">
+          <a href="faq.html" class="nav__link">FAQ</a>
+        </div>
+        <div class="nav__item">
+          <a href="legal.html" class="nav__link">Legal</a>
+        </div>
+        <div class="nav__item">
+          <a href="contact.html" class="nav__link">Contact us</a>
+        </div>
+      </nav>
+    </div>
+
+    <main class="dashboard-wrapper">
+      <div class="aside-nav-container">
+        <div class="aside-nav-container__user">
+          <a href="#" class="aside-nav-container__link">oper@mail.com</a>
+          <a href="#" class="aside-nav-container__link">admin@mail.com</a>
+        </div>
+        <nav class="aside-nav">
+          <div class="aside-nav__item">
+            <a href="admin-transactions.html" class="aside-nav__link aside-nav__link_active">Transactions</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="documents.html" class="aside-nav__link">Documents</a>
+          </div>
+          <div class="aside-nav__item">
+            <a href="" class="aside-nav__link">Settings</a>
+          </div>
+        </nav>
+      </div>
+
+      <section class="dashboard">
+        <button class="logout-btn">
+          <img src="img/logout-icon.svg" alt="Logout icon" class="logout-btn__icon">Logout
+        </button>
+
+        <div class="block">
+          <header class="block__header">
+            <h2 class="block__title">All transactions</h2>
+          </header>
+          <div class="block__body block__body_padding-top-0">
+            <div class="block__table">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table__th">Wallet</th>
+                    <th class="table__th">Status</th>
+                    <th class="table__th">Currency</th>
+                    <th class="table__th">Date</th>
+                    <th class="table__th">Amount to wallet</th>
+                    <th class="table__th">Payment amount</th>
+                    <th class="table__th">Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status table__status_waiting">
+                Waiting
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">07/04/2017</td>
+                    <td class="table__td">9.12.2015</td>
+                    <td class="table__td">01828112233</td>
+                    <td class="table__td">
+                      <span class="gradient-button">
+                <button class="gradient-button__inner">
+                  Confirm
+                </button>
+              </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status">
+                Confirmed
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">05/12/2017</td>
+                    <td class="table__td">9.12.2016</td>
+                    <td class="table__td">01828152233</td>
+                    <td class="table__td">
+                      <button class="border-button">Confirmed</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status">
+                Confirmed
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">08/08/2017</td>
+                    <td class="table__td">9.12.2016</td>
+                    <td class="table__td">01328112234</td>
+                    <td class="table__td">
+                      <button class="border-button">Confirmed</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status">
+                Confirmed
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">26/08/2016</td>
+                    <td class="table__td">9.12.2015</td>
+                    <td class="table__td">01328342233</td>
+                    <td class="table__td">
+                      <button class="border-button">Confirmed</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status">
+                Confirmed
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">19/10/2017</td>
+                    <td class="table__td">9.12.2016</td>
+                    <td class="table__td">01828112233</td>
+                    <td class="table__td">
+                      <button class="border-button">Confirmed</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__td">customer@mail.com</td>
+                    <td class="table__td">
+                      <span class="table__status">
+                Confirmed
+              </span>
+                    </td>
+                    <td class="table__td">BTC</td>
+                    <td class="table__td">01/02/2017</td>
+                    <td class="table__td">9.12.2016</td>
+                    <td class="table__td">01728152233</td>
+                    <td class="table__td">
+                      <button class="border-button">Confirmed</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="big-header big-header_with-bg">
+      <div class="big-header__row">
+        <a href="index.html" class="big-header__logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="big-header__row">
+        <div class="container container_big">
+          <nav class="nav nav_desktop">
+            <div class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </div>
+            <div class="nav__item">
+              <a href="faq.html" class="nav__link nav__link_active">FAQ</a>
+            </div>
+            <div class="nav__item">
+              <a href="legal.html" class="nav__link">Legal</a>
+            </div>
+            <div class="nav__item">
+              <a href="contact.html" class="nav__link">Contact us</a>
+            </div>
+            <div class="nav__item nav__item_relative _popup-block-container">
+              <button class="nav__link nav__link_font-size-17 _open-popup-block">Wallet</button>
+              <div class="popup-block wallet-form _popup-block">
+                <div class="popup-block__title">
+                  Wallet
+                </div>
+                <form action="" class="form">
+                  <div class="form__item">
+                    <input type="email" placeholder="E-mail" class="form__input">
+                  </div>
+                  <div class="form__item">
+                    <input type="password" placeholder="Password" class="form__input">
+                  </div>
+                  <div class="wallet-form__actions">
+                    <div class="form__accept">
+                      <label for="remember" class="form__label form__label_font-size-10 checkbox checkbox_small">
+                        Remember me
+                        <input id="remember" type="checkbox">
+                        <span class="checkbox__checkmark checkbox__checkmark_small"></span>
+                      </label>
+                    </div>
+                    <a href="#" class="wallet-form__link">Forgot password</a>
+                  </div>
+                  <div class="popup-block__button popup-block__button_margin-bottom">
+                    <a href="dashboard.html" class="action-button">
+                  Login
+                </a>
+                  </div>
+                  <a href="#" class="wallet-form__link wallet-form__link_font-size-14 _open-wallet-form-btn">Open Wallet</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <button class="burger _open-menu"></button>
+
+    </header>
+
+    <div class="menu _menu">
+      <button class="menu__close _close-menu"></button>
+      <nav class="nav nav_direction-column">
+        <div class="nav__item">
+          <a href="wallet.html" class="nav__link">Wallet</a>
+        </div>
+        <div class="nav__item">
+          <a href="faq.html" class="nav__link nav__link_active">FAQ</a>
+        </div>
+        <div class="nav__item">
+          <a href="legal.html" class="nav__link">Legal</a>
+        </div>
+        <div class="nav__item">
+          <a href="contact.html" class="nav__link">Contact us</a>
+        </div>
+      </nav>
+    </div>
+
+    <main class="content">
+      <section class="tabs">
+        <div class="tabs__container tabs__container_faq">
+          <button class="tabs__tab tabs__tab_small-font-size _default" onclick="openTab(event, 'basics')">Getting Started / The basics</button>
+          <button class="tabs__tab tabs__tab_small-font-size" onclick="openTab(event, 'questions')">Top Questions</button>
+          <button class="tabs__tab tabs__tab_small-font-size" onclick="openTab(event, 'help-topics')">Wallet, Account and Security / Help Topics</button>
+        </div>
+        <div id="basics" class="tabs__content _basics">
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What is Crypto?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  Crypto is a form of digital currency, created and held electronically. It is the first decentralized peer-to-peer payment network that is powered by its users without having a central authority or middlemen involved.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              How long does it take for Pointsbit to send my Crypto once I’ve paid?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  Pointsbit sends Crypto immediately after the client’s payment details have been confirmed and authenticated. Delays might occur as a result of purchasing outside of business hours (GMT) or regardless of hours of operation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What methods of payment does Pointsbit offer?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  At Pointsbit, you can purchase Crypto with your choice of credit/debit card or by using an alternative payment method.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What if I want to buy more/less coins than the amounts offered?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  If you would like to buy different amounts, please use the “Slider” (the price calculator) located at the bottom of the homepage or the input for entering the desired sum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="questions" class="tabs__content _questions">
+          <p>Some content</p>
+        </div>
+        <div id="help-topics" class="tabs__content _help-topics">
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What is Crypto?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  Crypto is a form of digital currency, created and held electronically. It is the first decentralized peer-to-peer payment network that is powered by its users without having a central authority or middlemen involved.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              How long does it take for Pointsbit to send my Crypto once I’ve paid?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  Pointsbit sends Crypto immediately after the client’s payment details have been confirmed and authenticated. Delays might occur as a result of purchasing outside of business hours (GMT) or regardless of hours of operation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What methods of payment does Pointsbit offer?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  At Pointsbit, you can purchase Crypto with your choice of credit/debit card or by using an alternative payment method.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content-item">
+            <div class="accordion">
+              What if I want to buy more/less coins than the amounts offered?
+            </div>
+            <div class="panel">
+              <div class="accordion__content">
+                <p class="tabs__text">
+                  If you would like to buy different amounts, please use the “Slider” (the price calculator) located at the bottom of the homepage or the input for entering the desired sum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer footer_alt-bg">
+      <div class="footer__rights">
+        Copyrights to CryptoSky OU. Pointsbit.com is owned and operated by CryptoSky OU, Estonia. CryptoSky OU aims to provide the services of selling crypto currencies to individuals around the world. Our users are able to easily purchase and securely store
+        crypto currencies with a swipe of a card. Please read our <a href="" class="footer__link">“Privacy Policy”</a>, <a href="" class="footer__link">“AML & KYC Policy”</a>, and <a href="" class="footer__link">“Terms of Service”</a> before deciding
+        to use our site. Risk Warning: The investment in virtual or crypto currencies, such as Bitcoin, involves significant amount of risk and can lead to the loss of money over short or even long periods of time. The investors in crypto currencies should
+        expect prices to have large range fluctuations. The information published on the website doesn’t guarantee that the investors in crypto currency would not lose money. As Estonia is a European country, all prices and transactions are in Euro currency,
+        therefore transactions from clients from outside the EU will be converted to EUR. You may not use the Services or the Website if you are located or are a resident of the Democratic People’s Republic of Korea (DPRK), Iran, Syria, Lebanon, Iraq,
+        the United States of America and Luxemburg (“Restricted Territories”). Pointsbit operated by Cryptosky OU operates at Roosikrantsi 2, Tallinn, 10119, Estonia. CryptoSky OU is a holder of exchange and wallet register given by the FIU Estonia
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

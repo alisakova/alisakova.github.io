@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>PointsBit</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body class="dashboard-body">
+  <header class="header">
+    <div class="header__col header__col_left">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.svg" alt="Logo" />
+      </a>
+    </div>
+    <div class="header__col header__col_medium">
+      <button class="burger _open-menu"></button>
+      <nav class="nav nav_padding nav_desktop">
+        <div class="nav__item nav__item_dashboard">
+          <a href="index.html" class="nav__link nav__link_dashboard">Home</a>
+        </div>
+        <div class="nav__item nav__item_dashboard">
+          <a href="legal.html" class="nav__link nav__link_dashboard">Legal</a>
+        </div>
+        <div class="nav__item nav__item_dashboard">
+          <a href="faq.html" class="nav__link nav__link_dashboard">FAQ</a>
+        </div>
+      </nav>
+    </div>
+    <div class="header__col header__col_right">
+      <div class="user-block">
+        <div class="user-block__mail">customer@mail.com</div>
+        <div class="user-block__info">
+          <div class="user-block__date">17-09-2018</div>
+          <div class="user-block__time">2.45 AM</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu _menu">
+    <button class="menu__close _close-menu"></button>
+    <nav class="nav nav_direction-column">
+      <div class="nav__item">
+        <a href="dashboard.html" class="nav__link nav__link_active">Dashboard</a>
+      </div>
+      <div class="nav__item">
+        <a href="transactions.html" class="nav__link">All transactions</a>
+      </div>
+      <div class="nav__item">
+        <a href="withdraw.html" class="nav__link">Withdraw</a>
+      </div>
+      <div class="nav__item">
+        <a href="wallet.html" class="nav__link">Wallet</a>
+      </div>
+      <div class="nav__item">
+        <a href="faq.html" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__item">
+        <a href="legal.html" class="nav__link">Legal</a>
+      </div>
+      <div class="nav__item">
+        <a href="contact.html" class="nav__link">Contact us</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="dashboard-wrapper">
+    <div class="statistics">
+      <div class="container container_1180 statistics__container">
+        <div class="statistics__block">
+          <div class="select-container select-container_statistics">
+            <select class="select" name="state">
+              <option value="btc">
+                BTC/EUR
+              </option>
+              <option value="eth">
+                ETH/EUR
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="statistics__block">
+          <div class="statistics__title">
+            Last
+          </div>
+          <div class="statistics__value statistics__value_rose">
+            €&nbsp;&nbsp;2,4556
+          </div>
+        </div>
+        <div class="statistics__block">
+          <div class="statistics__title">
+            High
+          </div>
+          <div class="statistics__value statistics__value_green">
+            €&nbsp;&nbsp;3,4556
+          </div>
+        </div>
+        <div class="statistics__block">
+          <div class="statistics__title">
+            Low
+          </div>
+          <div class="statistics__value statistics__value_red">
+            €&nbsp;&nbsp;1,4556
+          </div>
+        </div>
+        <div class="statistics__block">
+          <div class="statistics__title">
+            24h Volume
+          </div>
+          <div class="statistics__value statistics__value_blue">
+            €&nbsp;&nbsp;3,4556
+          </div>
+        </div>
+        <div class="statistics__block">
+          <div class="statistics__title">
+            Weighted Avg
+          </div>
+          <div class="statistics__value statistics__value_yellow">
+            €&nbsp;&nbsp;3,4556
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="dashboard">
+      <div class="container container_1192">
+        <div class="dashboard__container">
+          <div class="divider"></div>
+          <div class="dashboard__block-container">
+            <div class="block block_medium">
+              <div class="block__body block__body_padding-0">
+                <img src="img/diagram.png" alt="Diagram" />
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="block__body block__body_flex">
+                <div class="block__col">
+                  <div class="status status_confirmed">
+                    <span>Ок</span>
+                  </div>
+                </div>
+                <div class="block__col block__col_text-center">
+                  <h2 class="block__title block__title_margin-bottom block__title_font-size-17">Wallet</h2>
+                  <div class="block__status">Confirmed</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="dashboard__block-container">
+            <div class="block">
+              <div class="block__body block__body_small-padding block__body_flex block__body_flex_center-space-between">
+                <h2 class="block__title block__title_font-size-12">Current price</h2>
+                <div class="select-container select-container_green-arrow">
+                  <select class="form__select select" name="state">
+                    <option value="btc" selected>
+                      BTC
+                    </option>
+                    <option value="eth">
+                      ETH
+                    </option>
+                  </select>
+                </div>
+                <div class="value value_yellow">€ 12,4587</div>
+                <button class="underline-btn underline-btn_green-border underline-btn_border-width-4">Exchange</button>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="block__body block__body_small-padding block__body_flex block__body_flex_center-space-between">
+                <h2 class="block__title block__title_font-size-14">Withdraw</h2>
+                <div class="select-container select-container_green-arrow select-container_green-arrow_font-size-14">
+                  <select class="form__select select" name="state">
+                    <option value="btc" selected>
+                      BTC
+                    </option>
+                    <option value="eth">
+                      ETH
+                    </option>
+                  </select>
+                </div>
+                <div class="value value_red value_font-size-14">0.162535</div>
+                <button class="underline-btn underline-btn_font-size-14 underline-btn_red-border underline-btn_border-width-6">Withdraw</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="dashboard__block-container">
+            <div class="block block_padding">
+              <header class="block__header block__header_flex">
+                <h2 class="block__title">Balance wallet</h2>
+                <a href="transactions.html" class="block__subtitle">All transactions</a>
+              </header>
+              <div class="block__body block__body_padding-0">
+                <div class="table-container">
+                  <table class="table">
+                    <thead class="table__thead">
+                      <tr>
+                        <th class="table__th table__th_with-bg">Currency</th>
+                        <th class="table__th table__th_with-bg">Balance</th>
+                        <th class="table__th table__th_with-bg">Rate</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__tbody">
+                      <tr>
+                        <td class="table__td">ETH</td>
+                        <td class="table__td">45.123555</td>
+                        <td class="table__td">€&nbsp;&nbsp;1,345</td>
+                      </tr>
+                      <tr>
+                        <td class="table__td">Bitcoin</td>
+                        <td class="table__td">0.162535</td>
+                        <td class="table__td">€&nbsp;&nbsp;1,768</td>
+                      </tr>
+                      <tr>
+                        <td class="table__td">&nbsp;</td>
+                        <td class="table__td">&nbsp;</td>
+                        <td class="table__td">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="block block_padding">
+              <header class="block__header">
+                <a href="documents.html" class="block__title">Documents</a>
+              </header>
+              <div class="block__body block__body_padding-0">
+                <div class="table-container">
+                  <table class="table">
+                    <thead class="table__thead">
+                      <tr>
+                        <th class="table__th table__th_with-bg">Name</th>
+                        <th class="table__th table__th_with-bg table__th_text-right">Status</th>
+                        <th class="table__th table__th_with-bg">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table__tbody">
+                      <tr>
+                        <td class="table__td table__td_small-padding">Passport</td>
+                        <td class="table__td table__td_small-padding table__td_text-right">Confirmed</td>
+                        <td class="table__td table__td_small-padding table__td_text-center">
+                          <button class="underline-btn underline-btn_border-width-6 underline-btn_font-size-14 underline-btn_yellow-border">Upload</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table__td table__td_small-padding">Bank documents</td>
+                        <td class="table__td table__td_small-padding table__td_text-right">Confirmed</td>
+                        <td class="table__td table__td_small-padding table__td_text-center">
+                          <button class="underline-btn underline-btn_border-width-6 underline-btn_font-size-14 underline-btn_yellow-border">Upload</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table__td table__td_small-padding">&nbsp;</td>
+                        <td class="table__td table__td_small-padding table__td_text-right">&nbsp;</td>
+                        <td class="table__td table__td_small-padding table__td_text-center">
+                          <button class="underline-btn underline-btn_border-width-6 underline-btn_uppercase underline-btn_font-size-14 underline-btn_yellow-border">Add</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="logout-btn">
+      <img src="img/logout-icon.svg" alt="Logout icon" class="logout-btn__icon">Logout
+    </button>
+
+  </main>
+  <script src="js/main.min.js"></script>
+  <script>
+    pixelperfect.init( {
+    	image: "img/web.png",
+    	opacity: .4
+    } );
+  </script>
+</body>
+
+</html>
