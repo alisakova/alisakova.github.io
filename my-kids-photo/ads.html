@@ -10,6 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.20.0/daterangepicker.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.20.0/jquery.daterangepicker.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -57,7 +60,7 @@
                   </li>
                   <li class="nav__item"><a class="nav__link" href="best-series.html">Лучшие серии</a>
                   </li>
-                  <li class="nav__item"><a class="nav__link" href="">Ближайшие события</a>
+                  <li class="nav__item"><a class="nav__link" href="events.html">Ближайшие события</a>
                   </li>
                 </ul>
               </nav>
@@ -87,7 +90,7 @@
                 <h3 class="aside__title">Поиск объявлений</h3>
                 <div class="aside__controls">
                   <div class="aside__select">
-                    <select class="select select_orange-arrow select_filter-time">
+                    <select class="select select_filter-time select_orange-arrow">
                       <option>За все время</option>
                       <option>За неделю</option>
                       <option>За месяц</option>
@@ -95,7 +98,7 @@
                     </select>
                   </div>
                   <div class="aside__select">
-                    <select class="select select_orange-arrow select_filter-city">
+                    <select class="select select_filter-city select_orange-arrow">
                       <option></option>
                       <option>Москва</option>
                       <option>Санкт-Петербург</option>
@@ -141,19 +144,23 @@
             <div class="grid__main">
               <div class="wrap-container inner-container">
                 <div class="ad-card">
-                  <h3 class="ad-card__title">Ищу фотографа</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Москва</span><span class="ad-card__separator"></span><span class="ad-card__date">12.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Ищу фотографа</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Москва</span><span class="ad-card__separator"></span><span class="ad-card__date">12.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотосессия для детского Дня Рождения!!!</div>
+                    <div class="ad-card__price">10 000&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотосессия для детского Дня Рождения!!!</div>
-                  <div class="ad-card__price">10 000&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
                 <div class="ad-card ad-card_border-orange">
-                  <h3 class="ad-card__title">Фото на производство!</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Пермь</span><span class="ad-card__separator"></span><span class="ad-card__date">15.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Фото на производство!</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Пермь</span><span class="ad-card__separator"></span><span class="ad-card__date">15.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для сьёмок производства! Трансфер за наш счёт</div>
+                    <div class="ad-card__price">18 500&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для сьёмок производства! Трансфер за наш счёт</div>
-                  <div class="ad-card__price">18 500&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                   <div class="ad-card__badge badge"><span class="badge__text">Хорошее предложение!</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
@@ -162,43 +169,53 @@
                   </div>
                 </div>
                 <div class="ad-card">
-                  <h3 class="ad-card__title">Где же ты, где?</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Тверь</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Где же ты, где?</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Тверь</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для семейного торжества</div>
+                    <div class="ad-card__price">15 200&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для семейного торжества</div>
-                  <div class="ad-card__price">15 200&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
                 <div class="ad-card">
-                  <h3 class="ad-card__title">Фотограф в офис</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Санкт-Петербург</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Фотограф в офис</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Санкт-Петербург</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для деловой встречи в офисе</div>
+                    <div class="ad-card__price">20 000&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для деловой встречи в офисе</div>
-                  <div class="ad-card__price">20 000&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
                 <div class="ad-card">
-                  <h3 class="ad-card__title">Фотограф для свадьбы</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Самара</span><span class="ad-card__separator"></span><span class="ad-card__date">15.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Фотограф для свадьбы</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Самара</span><span class="ad-card__separator"></span><span class="ad-card__date">15.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для сьёмок свадьбы и всего застолья!</div>
+                    <div class="ad-card__price">18 500&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для сьёмок свадьбы и всего застолья!</div>
-                  <div class="ad-card__price">18 500&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
                 <div class="ad-card">
-                  <h3 class="ad-card__title">Фотограф для малыша</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Нижний Новгорода</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Фотограф для малыша</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Нижний Новгорода</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для семейного торжества</div>
+                    <div class="ad-card__price">15 200&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для семейного торжества</div>
-                  <div class="ad-card__price">15 200&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
                 <div class="ad-card ad-card_border-orange">
-                  <h3 class="ad-card__title">Ищу фотографа - роддом</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Санкт-Петербург</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Ищу фотографа - роддом</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Санкт-Петербург</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для съёмки выписки из роддома и семейного торжества</div>
+                    <div class="ad-card__price">20 000&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для съёмки выписки из роддома и семейного торжества</div>
-                  <div class="ad-card__price">20 000&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                   <div class="ad-card__badge badge"><span class="badge__text">Откликайся, - разберут!</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
@@ -207,11 +224,13 @@
                   </div>
                 </div>
                 <div class="ad-card ad-card_border-orange">
-                  <h3 class="ad-card__title">Фотограф на свадьбу!</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Москва</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">Фотограф на свадьбу!</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Москва</span><span class="ad-card__separator"></span><span class="ad-card__date">18.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Только супер-профи! Деньги - не вопрос!</div>
+                    <div class="ad-card__price">100 000&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Только супер-профи! Деньги - не вопрос!</div>
-                  <div class="ad-card__price">100 000&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                   <div class="ad-card__badge badge"><span class="badge__text">Вау! Такое бывает?)</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
@@ -220,11 +239,13 @@
                   </div>
                 </div>
                 <div class="ad-card">
-                  <h3 class="ad-card__title">В студию для школы!</h3>
-                  <div class="ad-card__info"><span class="ad-card__city">Калиниград</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                  <div class="ad-card__container">
+                    <h3 class="ad-card__title">В студию для школы!</h3>
+                    <div class="ad-card__info"><span class="ad-card__city">Калиниград</span><span class="ad-card__separator"></span><span class="ad-card__date">11.11.2018</span>
+                    </div>
+                    <div class="ad-card__text">Фотограф для семейного торжества</div>
+                    <div class="ad-card__price">15 200&nbsp;₽</div>
                   </div>
-                  <div class="ad-card__text">Фотограф для семейного торжества</div>
-                  <div class="ad-card__price">15 200&nbsp;₽</div>
                   <button class="btn btn_bordered_orange btn_bordered">Откликнуться</button>
                 </div>
               </div>
@@ -262,7 +283,7 @@
                 </li>
                 <li class="nav__item"><a class="nav__link" href="">Лучшие фотографии</a>
                 </li>
-                <li class="nav__item"><a class="nav__link" href="">Ближайшие события</a>
+                <li class="nav__item"><a class="nav__link" href="events.html">Ближайшие события</a>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="best-series.html">Лучшие серии</a>
                 </li>

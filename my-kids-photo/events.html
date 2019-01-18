@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-direction" content="telephone=no">
+  <title>My kids photo</title>
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.1.0/nouislider.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.20.0/daterangepicker.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.20.0/jquery.daterangepicker.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__row">
+          <div class="container header__container header__container_flex-end">
+            <div class="header__col"><span class="header__select-label">Ваш город</span>
+              <select class="select select_city">
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+              </select>
+            </div>
+            <div class="header__col header__actions">
+              <button class="btn btn_registration header__registation">Регистрация</button>
+              <button class="btn btn_transparent header__login">Вход</button>
+            </div>
+          </div>
+        </div>
+        <div class="header__row">
+          <div class="container header__container">
+            <div class="header__col">
+              <a class="header__logo" href="index.html">
+                <img src="img/main-logo.svg" alt="Логотип My Kids Photo">
+              </a>
+            </div>
+            <div class="header__col header__col_flex">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav__item dropdown"><span>Фотографы</span>
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__item"><a class="dropdown__link">Команда</a>
+                      </li>
+                      <li class="dropdown__item"><a class="dropdown__link">Форум</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="">Лучшие фотографии</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="best-series.html">Лучшие серии</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link" href="events.html">Ближайшие события</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__search">
+                <div class="search">
+                  <input class="search__input" type="text" placeholder="Поиск по сайту">
+                  <button class="search__btn">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.2567 14.5735L12.3125 10.6129C13.3266 9.44901 13.8823 7.98455 13.8823 6.45999C13.8823 2.89801 10.8806 0 7.19113 0C3.5017 0 0.5 2.89801 0.5 6.45999C0.5 10.022 3.5017 12.92 7.19113 12.92C8.57619 12.92 9.89609 12.5167 11.0246 11.751L14.9988 15.7416C15.1649 15.9082 15.3883 16 15.6278 16C15.8544 16 16.0694 15.9166 16.2326 15.7649C16.5794 15.4428 16.5904 14.9085 16.2567 14.5735ZM7.19113 1.68522C9.9182 1.68522 12.1367 3.82713 12.1367 6.45999C12.1367 9.09286 9.9182 11.2348 7.19113 11.2348C4.46406 11.2348 2.24551 9.09286 2.24551 6.45999C2.24551 3.82713 4.46406 1.68522 7.19113 1.68522Z"
+                      fill="#E37264" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="breadcrumbs"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__separator">/</span><a class="breadcrumbs__link" href="">Ближайшие события</a>
+          </div>
+          <div class="grid">
+            <div class="grid__aside grid__aside_events">
+              <aside class="aside">
+                <h3 class="aside__title">Поиск событий</h3>
+                <div class="aside__controls">
+                  <div class="aside__select">
+                    <select class="select select_filter-time select_beige-arrow">
+                      <option>За все время</option>
+                      <option>За неделю</option>
+                      <option>За месяц</option>
+                      <option>За год</option>
+                    </select>
+                  </div>
+                  <div class="aside__date date">
+                    <input class="date__input" id="filter-date" value="1.12.2018 - 12.12.2018">
+                  </div>
+                  <div class="aside__select">
+                    <select class="select select_filter-city select_beige-arrow">
+                      <option></option>
+                      <option>Москва</option>
+                      <option>Санкт-Петербург</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn btn_bordered btn_bordered_beige">Найти</button>
+              </aside>
+            </div>
+            <div class="grid__main">
+              <div class="wrap-container inner-container">
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Мастер классы Андрея Балабасова, 2018 год. Германия.</h3>
+                    <div class="event-card__date">14 октября в 11:00</div>
+                    <div class="event-card__place">Айторф, Германия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Мастер класс “Белое на белом” От новичков до профи</h3>
+                    <div class="event-card__date">21 декабря в 12:00</div>
+                    <div class="event-card__place">Берлин, Германия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                  <div class="event-card__badge badge badge_event"><span class="badge__text">Регистрируйся сейчас!</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
+</svg>
+</span>
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Amaizing smile and u Мастер-класс</h3>
+                    <div class="event-card__date">1 января в 13:00</div>
+                    <div class="event-card__place">Aim Street Journal, Лондон</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Экспресс - курс: “Съёмка интерьера”</h3>
+                    <div class="event-card__date">1.12.2018 - 14.12.1018</div>
+                    <div class="event-card__place">Калининград, Россия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                  <div class="event-card__badge badge badge_event"><span class="badge__text">Рекомендуем!</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
+</svg>
+</span>
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Блиц - курс “Анатомия и свет</h3>
+                    <div class="event-card__date">5 декабря в 12:00</div>
+                    <div class="event-card__place">Санкт-Петербург, Россия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Уличный пейзаж. Лекция</h3>
+                    <div class="event-card__date">2 декабря в 11:00</div>
+                    <div class="event-card__place">Берлин, Германия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Студийный свет для детской фотографии</h3>
+                    <div class="event-card__date">4 декабря в 13:00</div>
+                    <div class="event-card__place">Москва, Россия</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">Вручение награды “I am in portrait” best world photo stories about people</h3>
+                    <div class="event-card__date">1 октября в 13:00</div>
+                    <div class="event-card__place">Los Angeles, USA</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                </div>
+                <div class="event-card">
+                  <div class="event-card__info">
+                    <h3 class="event-card__title">National Geographics photo awards </h3>
+                    <div class="event-card__date">2 декабря в 11:00</div>
+                    <div class="event-card__place">NY, USA</div>
+                  </div>
+                  <button class="btn btn_bordered btn_bordered_beige">Подробнее</button>
+                  <div class="event-card__badge badge badge_event"><span class="badge__text">Хороший выбор</span><span class="badge__icon"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0446 1.09181C13.335 0.152134 14.665 0.152134 14.9554 1.09181L17.3232 8.75422C17.4527 9.17323 17.8401 9.45898 18.2787 9.45898H26.0437C27.0002 9.45898 27.4109 10.673 26.6508 11.2536L20.2838 16.1176C19.9508 16.372 19.8117 16.8071 19.9354 17.2075L22.3468 25.0108C22.6343 25.941 21.558 26.6918 20.7843 26.1007L14.6071 21.3817C14.2487 21.1079 13.7513 21.1079 13.3929 21.3817L7.21568 26.1007C6.442 26.6918 5.36575 25.941 5.6532 25.0108L8.06457 17.2075C8.1883 16.8071 8.04923 16.372 7.71621 16.1176L1.34924 11.2536C0.589122 10.673 0.999762 9.45898 1.9563 9.45898H9.72134C10.1599 9.45898 10.5473 9.17323 10.6768 8.75422L13.0446 1.09181Z" fill="white"/>
+</svg>
+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="container">
+          <div class="footer__col">
+            <a class="footer__logo" href="index.html">
+              <img src="img/footer-logo.svg" alt="My kids photo логотип">
+            </a>
+            <div class="footer__short-descr">Сайт о фотографах,
+              <br />с точным углом видиния</div>
+            <div class="footer__social-links">
+              <a class="footer__social-link" href="">
+                <img src="img/social-icons/facebook.svg" alt="Facebook">
+              </a>
+              <a class="footer__social-link" href="">
+                <img src="img/social-icons/instagram.svg" alt="Instagram">
+              </a>
+              <a class="footer__social-link" href="">
+                <img src="img/social-icons/vk.svg" alt="Вконтакте">
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">Навигация</div>
+            <nav class="nav_footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="">Фотографы</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="">Лучшие фотографии</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="events.html">Ближайшие события</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="best-series.html">Лучшие серии</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">Профиль</div>
+            <nav class="nav_footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="">Войти</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="">Регистрация</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="">Восстановить доступ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">О сайте</div>
+            <nav class="nav_footer">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="">Помощь</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="">Правила</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__sub-container">
+        <div class="container"><span>Все права защищены, 2018г.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
