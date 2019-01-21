@@ -82,92 +82,96 @@
       </header>
       <main>
         <div class="container">
-          <div class="breadcrumbs"><a class="breadcrumbs__link" href="photograph-settings.html">Личный кабинет</a><span class="breadcrumbs__separator">/</span><a class="breadcrumbs__link" href="">Разместить событие</a>
+          <div class="breadcrumbs"><a class="breadcrumbs__link" href="photograph-settings.html">Личный кабинет</a><span class="breadcrumbs__separator">/</span><a class="breadcrumbs__link" href="">Купить PRO</a>
           </div>
           <div class="grid">
-            <div class="grid__aside grid__aside_liked-photos">
+            <div class="grid__aside grid__aside_my-photos">
               <nav class="settings-menu">
                 <ul class="settings-menu__list">
                   <li class="settings-menu__item"><a class="settings-menu__link" href="my-profile.html">Мой профиль</a>
                   </li>
                   <li class="settings-menu__item"><a class="settings-menu__link" href="my-photos.html">Мои фотографии</a>
                   </li>
-                  <li class="settings-menu__item"><a class="settings-menu__link" href="buy-a-pro.html">Купить PRO</a>
+                  <li class="settings-menu__item"><a class="settings-menu__link settings-menu__link_active" href="buy-a-pro.html">Купить PRO</a>
                   </li>
                   <li class="settings-menu__item"><a class="settings-menu__link" href="photograph-settings.html">Настройки</a>
                   </li>
-                  <li class="settings-menu__item"><a class="settings-menu__link settings-menu__link_active" href="make-event.html">Разместить событие</a>
+                  <li class="settings-menu__item"><a class="settings-menu__link" href="make-event.html">Разместить событие</a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="grid__main inner-container">
-              <form class="event-form form">
-                <div class="event-form__container">
-                  <div class="event-form__col">
-                    <div class="form__item">
-                      <label class="form__label" for="name">Имя</label>
-                      <input class="form__input" type="text" id="name">
-                    </div>
-                    <div class="form__item">
-                      <label class="form__label" for="price">Стоимость</label>
-                      <input class="form__input" type="text" id="price">
-                    </div>
-                    <div class="form__item">
-                      <label class="form__label" for="date">Дата</label>
-                      <input class="form__input" type="text" id="date">
-                    </div>
-                    <div class="form__item">
-                      <label class="form__label" for="time">Время</label>
-                      <input class="form__input" type="text" id="time">
-                    </div>
+            <div class="grid__main">
+              <h3>Мы подготовили для участников клуба несколько преимуществ:</h3>
+              <section class="rates">
+                <div class="rates__row rates__header">
+                  <div class="rates__cell"></div>
+                  <div class="rates__cell">PRO</div>
+                  <div class="rates__cell">Обычный</div>
+                </div>
+                <div class="rates__row">
+                  <div class="rates__cell">Комментировать чужие фотографии</div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
                   </div>
-                  <div class="event-form__col">
-                    <div class="form__item">
-                      <label class="form__label" for="title">Заголовок</label>
-                      <input class="form__input" type="text" id="title">
-                    </div>
-                    <div class="form__item">
-                      <label class="form__label" for="descr">Описание</label>
-                      <textarea class="form__textarea" id="descr"></textarea>
-                    </div>
-                    <div class="form__item">
-                      <label class="form__label" for="url">Ссылка на регистрацию</label>
-                      <input class="form__input" type="url" id="url">
-                    </div>
-                    <button class="btn btn_bg btn_bg_red" type="submit">Разместить</button>
-                  </div>
-                  <div class="event-form__col">
-                    <div class="event-form__upload">
-                      <div class="event-form__upload-text">Фото</div>
-                      <label class="upload-file upload-file_photo">
-                        <input type="file">
-                        <div class="upload-file__container"></div>
-                        <div class="upload-file__text btn-dashed">Загрузить фото</div>
-                      </label>
-                    </div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
                   </div>
                 </div>
-              </form>
-              <section class="make-event">
-                <h3 class="make-event__title">Мои события</h3>
-                <div class="wrap-container make-event__container">
-                  <div class="event-card">
-                    <div class="event-card__info">
-                      <h3 class="event-card__title">Студийный свет для детской фотографии</h3>
-                      <div class="event-card__date">4 декабря в 13:00</div>
-                      <div class="event-card__place">Москва, Россия</div>
-                    </div>
-                    <button class="btn btn_bordered btn_bordered_red">Подробнее</button>
+                <div class="rates__row">
+                  <div class="rates__cell">Добавить фото в избраное</div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
                   </div>
-                  <div class="event-card">
-                    <div class="event-card__info">
-                      <h3 class="event-card__title">Вручение награды “I am in portrait”  best world photo stories...”</h3>
-                      <div class="event-card__date">1 октября в 13:00</div>
-                      <div class="event-card__place">Los Angeles, USA</div>
-                    </div>
-                    <button class="btn btn_bordered btn_bordered_red">Подробнее</button>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
                   </div>
+                </div>
+                <div class="rates__row">
+                  <div class="rates__cell">Просмотр объявлений родителей</div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+                <div class="rates__row">
+                  <div class="rates__cell">Загрузка фотографий</div>
+                  <div class="rates__cell">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 8.58824L9.77778 18L22 2" stroke="#E37264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <div class="rates__cell">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L22 22" stroke="#575756" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M22 2L2 22" stroke="#575756" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                </div>
+                <div class="rates__buy">
+                  <button class="btn btn_bordered_red btn_bordered">Купить PRO</button>
                 </div>
               </section>
             </div>
