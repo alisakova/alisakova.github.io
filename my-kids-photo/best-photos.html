@@ -83,8 +83,8 @@
     <div class="content">
       <header class="header">
         <div class="header__row">
-          <div class="container header__container header__container_flex-end">
-            <div class="header__col"><span class="header__select-label">Ваш город</span>
+          <div class="container header__container header__container_flex-end header__container_mobile-column">
+            <div class="header__col header__col_nowrap"><span class="header__select-label">Ваш город</span>
               <select class="select select_city">
                 <option>Москва</option>
                 <option>Санкт-Петербург</option>
@@ -108,7 +108,7 @@
                   <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
                   </li>
                   <li class="nav__item dropdown"><a href="photographs.html">Фотографы</a>
-                    <div class="dropdown__btn">
+                    <div class="dropdown__btn dropdown__btn_dropdown-menu-show">
                       <ul class="dropdown__menu">
                         <li class="dropdown__item"><a class="dropdown__link" href="team.html">Команда</a>
                         </li>
@@ -350,7 +350,7 @@
             </div>
           </div>
         </section>
-        <section class="comments">
+        <section class="comments" data-accordion="wrapper">
           <div class="container">
             <div class="comments__wrapper comments__wrapper_margins">
               <div class="comments__panel action-panel">
@@ -440,12 +440,13 @@
                             <p class="comments__text">Кто-то не переносит критику, кажется... зачем решать за автора? С очками и без них - у меня есть вкус!</p>
                           </div>
                           <div class="comments__col comments__col_center">
-                            <div class="comments__arrow comments__arrow_bottom"></div>
-                            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M8.64393 0.234736L0.147714 10.544C-0.0101544 10.7354 -0.0436417 11.0033 0.0616042 11.2281C0.16685 11.453 0.396477 11.5965 0.64524 11.5965L5.12297 11.5965C5.30476 16.6005 7.07002 20.0401 10.3757 21.8293C13.2269 23.3697 16.6043 23.3553 18.8384 23.341C19.0202 23.341 19.1924 23.341 19.3551 23.341C19.6469 23.341 19.9052 23.1449 19.9818 22.8578C19.9961 22.8052 20.0009 22.7478 20.0009 22.6952C20.0009 22.4655 19.8813 22.2503 19.6756 22.1354C13.5187 18.6432 13.2221 15.7681 13.2078 11.6013L17.6712 11.6013C17.9199 11.6013 18.1495 11.4578 18.2548 11.2281C18.36 10.9985 18.3265 10.7354 18.1687 10.5393L9.64376 0.234736C9.51938 0.0864354 9.33759 0.000324361 9.14624 0.000324358C8.95488 0.000324356 8.76831 0.0864354 8.64393 0.234736Z"
-                              fill="#E37264" />
-                            </svg>
+                            <div class="comments__arrow comments__arrow_bottom">
+                              <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.64393 0.234736L0.147714 10.544C-0.0101544 10.7354 -0.0436417 11.0033 0.0616042 11.2281C0.16685 11.453 0.396477 11.5965 0.64524 11.5965L5.12297 11.5965C5.30476 16.6005 7.07002 20.0401 10.3757 21.8293C13.2269 23.3697 16.6043 23.3553 18.8384 23.341C19.0202 23.341 19.1924 23.341 19.3551 23.341C19.6469 23.341 19.9052 23.1449 19.9818 22.8578C19.9961 22.8052 20.0009 22.7478 20.0009 22.6952C20.0009 22.4655 19.8813 22.2503 19.6756 22.1354C13.5187 18.6432 13.2221 15.7681 13.2078 11.6013L17.6712 11.6013C17.9199 11.6013 18.1495 11.4578 18.2548 11.2281C18.36 10.9985 18.3265 10.7354 18.1687 10.5393L9.64376 0.234736C9.51938 0.0864354 9.33759 0.000324361 9.14624 0.000324358C8.95488 0.000324356 8.76831 0.0864354 8.64393 0.234736Z"
+                                fill="#E37264" />
+                              </svg>
 
+                            </div>
                           </div>
                         </div>
                       </div>

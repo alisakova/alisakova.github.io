@@ -83,8 +83,8 @@
     <div class="content">
       <header class="header">
         <div class="header__row">
-          <div class="container header__container header__container_flex-end">
-            <div class="header__col"><span class="header__select-label">Ваш город</span>
+          <div class="container header__container header__container_flex-end header__container_mobile-column">
+            <div class="header__col header__col_nowrap"><span class="header__select-label">Ваш город</span>
               <select class="select select_city">
                 <option>Москва</option>
                 <option>Санкт-Петербург</option>
@@ -108,7 +108,7 @@
                   <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
                   </li>
                   <li class="nav__item dropdown"><a href="photographs.html">Фотографы</a>
-                    <div class="dropdown__btn">
+                    <div class="dropdown__btn dropdown__btn_dropdown-menu-show">
                       <ul class="dropdown__menu">
                         <li class="dropdown__item"><a class="dropdown__link" href="team.html">Команда</a>
                         </li>
@@ -138,15 +138,31 @@
                 </div>
               </div>
             </div>
+            <div class="header__col">
+              <div class="user">
+                <div class="user__img">
+                  <img src="" alt="">
+                </div>
+                <div class="user__profile dropdown dropdown_simple"><span>brukman.a@mail.ru</span>
+                  <div class="dropdown__btn"></div>
+                  <ul class="dropdown__menu">
+                    <li class="dropdown__item"><a class="dropdown__link">Настройки</a>
+                    </li>
+                    <li class="dropdown__item"><a class="dropdown__link">Выйти</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
       <main>
         <div class="container">
-          <div class="breadcrumbs"><a class="breadcrumbs__link" href="index.html">Личный кабинет</a><span class="breadcrumbs__separator">/</span><a class="breadcrumbs__link" href="">Настройки</a>
+          <div class="breadcrumbs breadcrumbs_margin-top-small breadcrumbs_margin-bottom-small"><a class="breadcrumbs__link" href="index.html">Личный кабинет</a><span class="breadcrumbs__separator">/</span><a class="breadcrumbs__link" href="">Настройки</a>
           </div>
           <div class="grid">
-            <div class="grid__aside grid__aside_settings">
+            <div class="grid__aside grid__aside_settings grid__aside_smaller-width">
               <nav class="settings-menu">
                 <ul class="settings-menu__list">
                   <li class="settings-menu__item"><a class="settings-menu__link" href="make-ad.html">Разместить объявление</a>
