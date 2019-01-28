@@ -21,6 +21,27 @@
 </head>
 
 <body>
+  <div class="menu _menu">
+    <button class="menu__close _close-menu"></button>
+    <nav class="nav nav_mobile">
+      <ul class="nav__list nav__list_not-flex">
+        <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="photographs.html">Фотографы</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="team.html">Команда</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="forum.html">Форум</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="best-photos.html">Лучшие фотографии</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="best-series.html">Лучшие серии</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="events.html">Ближайшие события</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="modal modal_big" style="display: none;" id="welcome-modal">
     <div class="modal__wrapper">
       <div class="modal__title modal__title_center modal__title_border-bottom-none modal__title_margin-bottom-small">Добро пожаловать!</div>
@@ -85,21 +106,31 @@
     <div class="content">
       <header class="header">
         <div class="header__row">
-          <div class="container header__container header__container_flex-end header__container_mobile-column">
-            <div class="header__col header__col_nowrap"><span class="header__select-label">Ваш город</span>
-              <select class="select select_city">
-                <option>Москва</option>
-                <option>Санкт-Петербург</option>
-              </select>
+          <div class="container">
+            <div class="header__col header__col_mobile">
+              <a class="header__logo" href="index.html">
+                <img src="img/main-logo.svg" alt="Логотип My Kids Photo">
+              </a>
+              <div class="header__burger">
+                <button class="burger _open-menu"></button>
+              </div>
             </div>
-            <div class="header__col header__actions"><a class="btn btn_registration header__registation" data-fancybox data-options="{&quot;src&quot;: &quot;#welcome-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Регистрация</a>
-              <button class="btn btn_transparent header__login">Вход</button>
+            <div class="header__container header__container_flex-end">
+              <div class="header__col header__col_nowrap"><span class="header__select-label">Ваш город</span>
+                <select class="select select_city">
+                  <option>Москва</option>
+                  <option>Санкт-Петербург</option>
+                </select>
+              </div>
+              <div class="header__col header__actions"><a class="btn btn_registration header__registation" data-fancybox data-options="{&quot;src&quot;: &quot;#welcome-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Регистрация</a>
+                <button class="btn btn_transparent header__login">Вход</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="header__row">
           <div class="container header__container">
-            <div class="header__col">
+            <div class="header__col header__col_desktop">
               <a class="header__logo" href="index.html">
                 <img src="img/main-logo.svg" alt="Логотип My Kids Photo">
               </a>
