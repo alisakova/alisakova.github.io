@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-direction" content="telephone=no">
+  <link rel="icon" href="img/favicon-16.png" type="image/png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png">
+  <link rel="icon" href="img/favicon-120.png" type="image/png">
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <title>Osla</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script src="https://cdnjs.com/libraries/jquery.mask"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main>
+    <div class="modal modal-form" style="display: none;" id="registration">
+      <form class="form" id="registration-provider" action="https://docs.google.com/forms/d/e/1FAIpQLSd8YThurt5HktMzXBs1xyyZib_dMFHal_B855GaRbOuLuik8A/formResponse">
+        <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
+        <div class="form__item">
+          <label class="form__label" for="fio">
+            <input class="form__input" type="text" id="fio" name="entry.2005620554" required><span class="form__label-text">ФИО</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="tel">
+            <input class="form__input" type="tel" id="tel" name="entry.1166974658" required><span class="form__label-text">Телефон</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="mail">
+            <input class="form__input" type="уmail" id="mail" name="entry.1045781291" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required><span class="form__label-text">Email</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+        <div class="form__item">
+          <label class="form__label checkbox error" for="accept">Я даю согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности
+            <input id="accept" type="checkbox" required checked><span class="checkbox__checkmark"></span>
+          </label>
+          <div class="form__error">Подтвердите согласие</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal success-block" style="display: none;" id="success-modal">
+      <div class="success-block__content">
+        <div class="success-block__img">
+          <img src="img/modal-success-img.png" alt="Успешная отправка формы">
+        </div>
+        <p class="success-block__text">Ваша заявка отправлена. Мы&nbsp;свяжемся с вами в ближайшее время.</p><a class="btn" data-fancybox-close>Ок</a>
+      </div>
+    </div>
+    <div class="full-height inner">
+      <section class="intro inner">
+        <div class="container">
+          <header class="header">
+            <div class="header__container">
+              <div class="header__col">
+                <a class="header__logo" href="index.html">
+                  <img src="img/logo/osla-logo-black.svg" alt="OSLA логотип">
+                </a>
+              </div>
+              <div class="header__col header__col_flex">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a href="/index.html">Главная</a>
+                    </li>
+                    <li class="nav__item"><a href="/purchaser.html">Для общепита</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header__tel"><span class="header__icon"> <img src="img/tel.svg" alt="Телефон"></span><a class="header__link" href="tel:88123325421">8 (812) 332-54-21</a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="intro__container">
+            <div class="intro__content">
+              <h1 class="intro__title">Полный контроль над поставками в HoReCa</h1>
+              <div class="intro__image intro__image_mobile">
+                <img src="img/intro-img-mobile.svg" alt="Полный контроль над закупками в HoReCa">
+              </div>
+              <p class="intro__text">OSLA - это новое решение для поставщиков, которое позволит выйти на обширный рынок сбыта, упростить процесс взаимодействия с вашими заказчиками и найти новых</p><a class="btn btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}"
+              href="javascript:;">Подключиться</a><a class="btn btn_mobile" href="registration-provider.html">Подключиться</a>
+            </div>
+            <div class="intro__image intro__image_desktop">
+              <img src="img/intro-img.svg" alt="Полный контроль над поставками в HoReCa">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="logos">
+        <div class="container">
+          <div class="logos__container">
+            <div class="logos__item">
+              <img src="img/company-logos/logo-0.png" alt="Meridian">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-1.png" alt="Alidi">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-2.png" alt="Daily Delicatessen">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-3.png" alt="Гирлянда">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-4.png" alt="Булки Баранки">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-5.png" alt="Puratos">
+            </div>
+            <div class="logos__item">
+              <img src="img/company-logos/logo-6.png" alt="Пышечная фабрика">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="reasons">
+      <div class="container">
+        <h2>4 причины</h2>
+        <div class="reasons__subtitle">Попробовать OSLA прямо сейчас</div>
+        <div class="reasons__container">
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <img src="img/reasons/reason-0.png" alt="Заказы в режиме онлайн">
+            </div>
+            <div class="descr-block__content">
+              <div class="descr-block__title">Заказы в режиме онлайн</div>
+              <p class="descr-block__text">Управляйте заказами с любого устройства из любой точки мира. Osla - полностью облачное решение, не требующее установки и дополнительного ПО</p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <img src="img/reasons/reason-1.png" alt="Бесплатно для поставщиков">
+            </div>
+            <div class="descr-block__content">
+              <div class="descr-block__title">Бесплатно для поставщиков</div>
+              <p class="descr-block__text">Оптимизируйте поставки с OSLA легко и без затрат. Весь функционал системы доступен для поставщиков абсолютно бесплатно</p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <img src="img/reasons/reason-2.png" alt="Простая работа с документами">
+            </div>
+            <div class="descr-block__content">
+              <div class="descr-block__title">Простая работа с документами</div>
+              <p class="descr-block__text">Формирование накладных, приемка и корректировка в пару кликов. Расходуйте меньше времени на работу с накладными</p>
+            </div>
+          </div>
+          <div class="descr-block">
+            <div class="descr-block__img">
+              <img src="img/reasons/reason-3.png" alt="Интеграция с iiko и 1С">
+            </div>
+            <div class="descr-block__content">
+              <div class="descr-block__title">Интеграция с iiko и 1С</div>
+              <p class="descr-block__text">C OSLA не нужно делать одну и ту же работу в разных системах. Настройте интеграцию с вашей системой учета и обмен данными будет производиться автоматически</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <h2>Функциональные решения</h2>
+        <div class="info__features features">
+          <div class="features__align-container">
+            <div class="features__content">
+              <div class="features__list">
+                <div class="features__item active" data-attribute="orders">
+                  <div class="features__arrows arrows">
+                    <button class="arrows__arrow arrows__arrow_up _arrow-up"></button>
+                    <button class="arrows__arrow arrows__arrow_down _arrow-down"></button>
+                  </div>
+                  <div class="features__title accordion">Простая обработка заказов</div>
+                  <div class="panel">
+                    <p class="features__text">Вносите изменения в заказы, согласовывайте условия, устанавливайте индивидуальные цены для каждого заказчика, которые увидит только он</p>
+                    <div class="features__mobile-img">
+                      <img src="img/purchaser-provider/orders.png" alt="Простая обработка заказов">
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item" data-attribute="statuses">
+                  <div class="features__arrows arrows">
+                    <button class="arrows__arrow arrows__arrow_up _arrow-up"></button>
+                    <button class="arrows__arrow arrows__arrow_down _arrow-down"></button>
+                  </div>
+                  <div class="features__title accordion">Единое окно управления заказами</div>
+                  <div class="panel">
+                    <p class="features__text">Обрабатывайте заказы, обменивайтесь документами, выгружайте данные в свою систему учета, просматривайте историю выполненных заказов</p>
+                    <div class="features__mobile-img">
+                      <img src="img/purchaser-provider/statuses.png" alt="Единое окно управления заказами ">
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item" data-attribute="market">
+                  <div class="features__arrows arrows">
+                    <button class="arrows__arrow arrows__arrow_up _arrow-up"></button>
+                    <button class="arrows__arrow arrows__arrow_down _arrow-down"></button>
+                  </div>
+                  <div class="features__title accordion">Продажи товаров на Маркете <span class='small-text'>(скоро)</span>
+                  </div>
+                  <div class="panel">
+                    <p class="features__text">Размещайте товары на “Маркете”, находите новых заказчиков, анализируйте базовые цены конкурентов</p>
+                    <div class="features__mobile-img">
+                      <img src="img/purchaser-provider/market.png" alt="Продажи товаров на Маркете &lt;span class='small-text'&gt;(скоро)&lt;/span&gt;">
+                    </div>
+                  </div>
+                </div>
+                <div class="features__item" data-attribute="analytics">
+                  <div class="features__arrows arrows">
+                    <button class="arrows__arrow arrows__arrow_up _arrow-up"></button>
+                    <button class="arrows__arrow arrows__arrow_down _arrow-down"></button>
+                  </div>
+                  <div class="features__title accordion">Аналитика по закупкам</div>
+                  <div class="panel">
+                    <p class="features__text">Просматривайте детальную аналитику по продажам в различных разрезах, сравнивайте динамику по периодам, формируйте отчетность</p>
+                    <div class="features__mobile-img">
+                      <img src="img/purchaser-provider/analytics.png" alt="Аналитика по закупкам ">
+                    </div>
+                  </div>
+                </div>
+              </div><a class="arrow-btn arrow-btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}" href="javascript:;"><span>Попробовать Бесплатно</span><span class="arrow-btn__arrow"><img src="img/arrow.svg" alt="Декоративная стрелка"></span></a>
+              <a
+              class="arrow-btn arrow-btn_mobile" href="registration.html"><span>Попробовать Бесплатно</span><span class="arrow-btn__arrow"><img src="img/arrow.svg" alt="Декоративная стрелка"></span>
+                </a>
+            </div>
+            <div class="features__img">
+              <div class="features__img-container">
+                <img src="img/purchaser-provider/orders.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container container_small">
+        <div class="reviews-slider">
+          <div>
+            <div class="reviews-slider__img">
+              <img src="img/daily.png" alt="Ресторан “Гирлянда”">
+            </div>
+            <div class="reviews-slider__content">
+              <p class="reviews-slider__text">&quot;Мы готовим из свежих продуктов, дорожим качеством, поэтому работа с поставщиками в приоритете. Сервис, в котором можно установить лимиты по остаткам и фиксировать цены, решит для нас проблему и с ценой&quot;</p>
+              <div class="reviews-slider__author">Максим Петров</div>
+              <div class="reviews-slider__company">Ресторан “Гирлянда”</div>
+            </div>
+          </div>
+          <div>
+            <div class="reviews-slider__img">
+              <img src="img/daily.png" alt="Ресторан “Гирлянда”">
+            </div>
+            <div class="reviews-slider__content">
+              <p class="reviews-slider__text">&quot;Конечно, мы пользуемся системами управления, без них сейчас работать невозможно. Наши коллеги в Европе активно применяют сервисы автоматизации закупок. Хотим попробовать подобную систему в своем заведении&quot;</p>
+              <div class="reviews-slider__author">Максим Иванов</div>
+              <div class="reviews-slider__company">Ресторан “Гирлянда”</div>
+            </div>
+          </div>
+          <div>
+            <div class="reviews-slider__img">
+              <img src="img/daily.png" alt="Ресторан “Гирлянда”">
+            </div>
+            <div class="reviews-slider__content">
+              <p class="reviews-slider__text">&quot;Мы готовим из свежих продуктов, дорожим качеством, поэтому работа с поставщиками в приоритете. Сервис, в котором можно установить лимиты по остаткам и фиксировать цены, решит для нас проблему и с ценой&quot;</p>
+              <div class="reviews-slider__author">Максим Жуков</div>
+              <div class="reviews-slider__company">Ресторан “Гирлянда”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plans">
+      <div class="container">
+        <div class="plans__container">
+          <div class="plans__content">
+            <div class="plans__descr">
+              <h2>Тарифный план</h2>
+              <p class="plans__text">OSLA предлагает универсальный тарифный план для поставщиков HoReCa. Ознакомиться подробнее с функционалом вы можете, запросив презентацию системы</p><a class="arrow-btn arrow-btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}"
+              href="javascript:;"><span>Запросить презентацию</span><span class="arrow-btn__arrow"><img src="img/arrow.svg" alt="Декоративная стрелка"></span></a><a class="arrow-btn arrow-btn_mobile" href="registration.html"><span>Запросить презентацию</span><span class="arrow-btn__arrow"><img src="img/arrow.svg" alt="Декоративная стрелка"></span></a>
+            </div>
+            <div class="plans__img plans__img_desktop">
+              <img src="img/laptop.png" alt="Примеры интерфейсов">
+            </div>
+            <div class="plans__img plans__img_mobile">
+              <img src="img/laptop-mobile.png" alt="Примеры интерфейсов">
+            </div>
+          </div>
+          <div class="plans__types">
+            <div class="type-block _block one-block">
+              <div class="type-block__section">
+                <div class="type-block__title">Поставки</div>
+                <div class="type-block__for-what">Для поставщиков,
+                  <br />дистрибьюторов, производителей</div>
+                <div class="rates type-block__rates type-block__rates_no-discount">
+                  <div class="rates__price">Бесплатно</div>
+                </div>
+                <ul class="feature-list">
+                  <li class="feature-list__feature">Неограниченное кол-во пользователей</li>
+                  <li class="feature-list__feature">Получение и обработка заказов</li>
+                  <li class="feature-list__feature">Подключение своих клиентов</li>
+                  <li class="feature-list__feature">Поиск новых клиентов (по ИНН, названию)</li>
+                  <li class="feature-list__feature">Электронный обмен данными (EDI)</li>
+                  <li class="feature-list__feature">Интеграция с 1С</li>
+                  <li class="feature-list__feature">Настройка уровней доступа</li>
+                  <li class="feature-list__feature">Импорт данных из xlsx, xls</li>
+                </ul>
+              </div>
+              <div class="type-block__section"><a class="btn btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}" href="javascript:;">Выбрать</a><a class="btn btn_mobile" href="registration-provider.html">Выбрать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modules">
+      <div class="container">
+        <h2>Дополнительные модули</h2>
+        <div class="modules__container">
+          <div class="module modules__item _block" id="market">
+            <div class="module__container">
+              <div class="module__img module__img_desktop">
+                <img src="img/market.svg" alt="Маркет">
+              </div>
+              <div class="module__col">
+                <div class="module__title">Маркет</div>
+                <div class="module__img module__img_mobile">
+                  <img src="img/market.svg" alt="Маркет">
+                </div>
+                <div class="module__info">
+                  <div class="module__descr">Дополнительные возможности для закупок и&nbsp;поиска новых поставщиков</div>
+                  <ul class="feature-list module__features-list">
+                    <li class="feature-list__feature">Витрина товаров</li>
+                    <li class="feature-list__feature">Мониторинг базовых цен конкурентов</li>
+                  </ul>
+                </div>
+                <div class="module__rates">
+                  <div class="module__month-container months">
+                    <div class="months__container">
+                      <div class="months__item _3-month" data-attribute="3">3</div>
+                      <div class="months__item _6-month active" data-attribute="6">6</div>
+                      <div class="months__item _12-month" data-attribute="12">12</div>
+                    </div>
+                    <div class="months__subtitle">месяцев</div>
+                  </div>
+                  <div class="rates">
+                    <div class="rates__price"><span class="_price">1 620</span><span>&nbsp;₽/мес</span>
+                    </div>
+                    <div class="rates__discount _discount-container">
+                      <div class="rates__prev-price"><span class="_prev-price">1 800</span><span>&nbsp;₽/мес</span>
+                      </div>
+                      <div class="rates__discount-badge"><span class="_discount">-10</span><span>&nbsp;%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="module__btn-container"><a class="btn btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}" href="javascript:;">Выбрать</a><a class="btn btn_mobile" href="registration-provider.html">Выбрать</a>
+              <button class="btn btn_bordered _show-more">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="try">
+      <div class="container try__container">
+        <h2>Попробуйте Osla в действии</h2>
+        <div class="try__img">
+          <img src="img/try-img.svg" alt="Попробуйте Osla в действии">
+        </div>
+        <p class="try__text">Начните экономить уже сегодня! Используйте готовые механизмы управления полным циклом закупок в HoReCa</p><a class="btn btn_desktop" data-fancybox data-options="{&quot;src&quot;: &quot;#registration&quot;, &quot;touch&quot;: false}" href="javascript:;">Попробовать бесплатно</a>
+        <a
+        class="btn btn_mobile" href="registration-provider.html">Попробовать бесплатно</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__info">
+          <div class="footer__col footer__col_logo">
+            <a class="footer__logo" href="index.html">
+              <img src="img/logo/osla-logo-white.svg" alt="OSLA логотип">
+            </a>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <div class="footer__contacts"><a class="footer__link" href="tel:88123325421">8 (812) 332-54-21</a><a class="footer__link" href="mailto:info@osla.ru">info@osla.ru</a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__contacts">
+              <div class="footer__address">г. Санкт-Петербург, Литейный пр-т, 26</div>
+              <div class="footer__copyrights">© 2018, ООО "ОСЛА"</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__col">
+            <div class="footer__social-icons">
+              <a class="footer__social-icon" href="https://vk.com/oslaru" target="_blank">
+                <img src="img/social-icons/vk.svg" alt="Вконтакте">
+              </a>
+              <a class="footer__social-icon" href="https://www.facebook.com/oslaru" target="_blank">
+                <img src="img/social-icons/fb.svg" alt="Facebook">
+              </a>
+              <a class="footer__social-icon" href="https://www.instagram.com/oslaru/" target="_blank">
+                <img src="img/social-icons/inst.svg" alt="Instagram">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-direction" content="telephone=no">
+  <link rel="icon" href="img/favicon-16.png" type="image/png">
+  <link rel="icon" href="img/favicon-32.png" type="image/png">
+  <link rel="icon" href="img/favicon-120.png" type="image/png">
+  <meta name="viewport" content="width=device-width, height=device-height">
+  <title>Osla</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script src="https://cdnjs.com/libraries/jquery.mask"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main>
+    <div class="modal modal-form" style="display: none;" id="registration">
+      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse">
+        <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
+        <div class="form__item">
+          <label class="form__label" for="fio">
+            <input class="form__input" type="text" id="fio" name="entry.2005620554" required><span class="form__label-text">ФИО</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="tel">
+            <input class="form__input" type="tel" id="tel" name="entry.1166974658" required><span class="form__label-text">Телефон</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="mail">
+            <input class="form__input" type="уmail" id="mail" name="entry.1045781291" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required><span class="form__label-text">Email</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+        <div class="form__item">
+          <label class="form__label checkbox error" for="accept">Я даю согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности
+            <input id="accept" type="checkbox" required checked><span class="checkbox__checkmark"></span>
+          </label>
+          <div class="form__error">Подтвердите согласие</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal success-block" style="display: none;" id="success-modal">
+      <div class="success-block__content">
+        <div class="success-block__img">
+          <img src="img/modal-success-img.png" alt="Успешная отправка формы">
+        </div>
+        <p class="success-block__text">Ваша заявка отправлена. Мы&nbsp;свяжемся с вами в ближайшее время.</p><a class="btn" data-fancybox-close>Ок</a>
+      </div>
+    </div>
+    <div class="internal-page">
+      <a class="back-btn" href="index.html">
+        <svg width="9" height="15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.299 15a1.5 1.5 0 0 1-1.08-.465L.429 8.538a1.499 1.499 0 0 1 0-2.1l6-5.997a1.507 1.507 0 0 1 2.13 2.13l-4.95 4.932 4.77 4.948a1.5 1.5 0 0 1 0 2.114 1.5 1.5 0 0 1-1.08.435z" fill="#9B9B9B" fill-rule="evenodd" />
+        </svg>
+      </a>
+      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse">
+        <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
+        <div class="form__item">
+          <label class="form__label" for="fio">
+            <input class="form__input" type="text" id="fio" name="entry.2005620554" required><span class="form__label-text">ФИО</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="tel">
+            <input class="form__input" type="tel" id="tel" name="entry.1166974658" required><span class="form__label-text">Телефон</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="mail">
+            <input class="form__input" type="уmail" id="mail" name="entry.1045781291" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required><span class="form__label-text">Email</span>
+          </label>
+          <div class="form__error"></div>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+        <div class="form__item">
+          <label class="form__label checkbox error" for="accept">Я даю согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности
+            <input id="accept" type="checkbox" required checked><span class="checkbox__checkmark"></span>
+          </label>
+          <div class="form__error">Подтвердите согласие</div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
