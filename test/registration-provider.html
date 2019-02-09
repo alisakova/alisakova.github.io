@@ -17,7 +17,7 @@
 <body>
   <main>
     <div class="modal modal-form" style="display: none;" id="registration">
-      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse" method="POST">
+      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
         <div class="form__item">
           <label class="form__label" for="fio">
@@ -60,7 +60,7 @@
           <path d="M7.299 15a1.5 1.5 0 0 1-1.08-.465L.429 8.538a1.499 1.499 0 0 1 0-2.1l6-5.997a1.507 1.507 0 0 1 2.13 2.13l-4.95 4.932 4.77 4.948a1.5 1.5 0 0 1 0 2.114 1.5 1.5 0 0 1-1.08.435z" fill="#9B9B9B" fill-rule="evenodd" />
         </svg>
       </a>
-      <form class="form" id="registration-provider" action="https://docs.google.com/forms/d/e/1FAIpQLSd8YThurt5HktMzXBs1xyyZib_dMFHal_B855GaRbOuLuik8A/formResponse" method="POST">
+      <form class="form" id="registration-provider" action="https://docs.google.com/forms/d/e/1FAIpQLSd8YThurt5HktMzXBs1xyyZib_dMFHal_B855GaRbOuLuik8A/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
         <div class="form__item">
           <label class="form__label" for="fio">
@@ -91,6 +91,10 @@
     </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var submitted=false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal()}"></iframe>
   <script src="js/main.min.js"></script>
 </body>
 

@@ -17,7 +17,7 @@
 <body>
   <main>
     <div class="modal modal-form" style="display: none;" id="registration">
-      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse" method="POST">
+      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
         <div class="form__item">
           <label class="form__label" for="fio">
@@ -67,9 +67,9 @@
               <div class="header__col header__col_flex">
                 <nav class="nav">
                   <ul class="nav__list">
-                    <li class="nav__item"><a href="/purchaser.html">Для общепита</a>
+                    <li class="nav__item"><a href="purchaser.html">Для общепита</a>
                     </li>
-                    <li class="nav__item"><a href="/provider.html">Для поставщиков</a>
+                    <li class="nav__item"><a href="provider.html">Для поставщиков</a>
                     </li>
                   </ul>
                 </nav>
@@ -86,7 +86,7 @@
               </div>
               <p class="intro__text">OSLA - это площадка, где встречаются поставщики и заведения общепита. Управляйте заказами, обменивайтесь документами, общайтесь с контрагентами, просматривайте аналитику, создавайте отчеты. Все что вам нужно для работы - доступ в интернет</p>
               <a
-              class="btn" href="/purchaser.html">Для общепита</a><a class="btn" href="/provider.html">Для поставщиков</a>
+              class="btn" href="purchaser.html">Для общепита</a><a class="btn" href="provider.html">Для поставщиков</a>
             </div>
             <div class="intro__image intro__image_desktop">
               <img src="img/intro-img.svg" alt="Система управления закупками в HoReCa">
@@ -124,6 +124,10 @@
     </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var submitted=false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal()}"></iframe>
   <script src="js/main.min.js"></script>
 </body>
 
