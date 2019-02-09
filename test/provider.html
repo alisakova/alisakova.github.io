@@ -12,12 +12,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <script src="https://cdnjs.com/libraries/jquery.mask"></script>
   <link rel="stylesheet" href="css/main.css">
+  <script>
+    var submitted=false;
+  </script>
 </head>
 
 <body>
   <main>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal();}"></iframe>
     <div class="modal modal-form" style="display: none;" id="registration">
-      <form class="form" id="registration-provider" action="https://docs.google.com/forms/d/e/1FAIpQLSd8YThurt5HktMzXBs1xyyZib_dMFHal_B855GaRbOuLuik8A/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+      <form class="form" id="registration-provider" action="https://docs.google.com/forms/d/e/1FAIpQLSd8YThurt5HktMzXBs1xyyZib_dMFHal_B855GaRbOuLuik8A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
         <div class="form__item">
           <label class="form__label" for="fio">
@@ -420,23 +424,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script>
-    var submitted=false;
-      var openSuccessModal = function() {
-        var instance = $.fancybox.getInstance();
-        console.log(instance);
-        if (instance) {
-          instance.close();
-          $.fancybox.open({
-            src  : '#success-modal',
-            type : 'inline'
-          });
-        } else {
-          window.location="success-send-form.html";
-        }
-      }
-  </script>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal();}"></iframe>
 </body>
 
 </html>
