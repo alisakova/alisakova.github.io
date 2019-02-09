@@ -12,32 +12,28 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <script src="https://cdnjs.com/libraries/jquery.mask"></script>
   <link rel="stylesheet" href="css/main.css">
-  <script>
-    var submitted=false;
-  </script>
 </head>
 
 <body>
   <main>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal();}"></iframe>
     <div class="modal modal-form" style="display: none;" id="registration">
-      <form class="form" id="registration-purchaser" action="https://docs.google.com/forms/d/e/1FAIpQLSfGurrxlHrKN7CojgcgX6w6gHzps8mLZMNbIww9DF6SE0USNA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+      <form class="form gform" id="registration-purchaser" action="https://script.google.com/macros/s/AKfycbxT7Mzvjtkmm8TjHGZBdZr7gQmgPQQrN9auuhsZOQ/exec" method="POST">
         <div class="form__title">Оставьте ваши контактные данные и наш специалист свяжется с вами в ближайшее время</div>
         <div class="form__item">
           <label class="form__label" for="fio">
-            <input class="form__input" type="text" id="fio" name="entry.2005620554" required><span class="form__label-text">ФИО</span>
+            <input class="form__input" type="text" id="fio" name="fio-purchaser" required><span class="form__label-text">ФИО</span>
           </label>
           <div class="form__error"></div>
         </div>
         <div class="form__item">
           <label class="form__label" for="tel">
-            <input class="form__input" type="tel" id="tel" name="entry.1166974658" required><span class="form__label-text">Телефон</span>
+            <input class="form__input" type="tel" id="tel" name="telephone" required><span class="form__label-text">Телефон</span>
           </label>
           <div class="form__error"></div>
         </div>
         <div class="form__item">
           <label class="form__label" for="mail">
-            <input class="form__input" type="уmail" id="mail" name="entry.1045781291" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required><span class="form__label-text">Email</span>
+            <input class="form__input" type="уmail" id="mail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required><span class="form__label-text">Email</span>
           </label>
           <div class="form__error"></div>
         </div>
@@ -129,6 +125,7 @@
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 </body>
 
 </html>
