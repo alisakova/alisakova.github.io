@@ -419,11 +419,24 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
   <script>
     var submitted=false;
+      var openSuccessModal = function() {
+        var instance = $.fancybox.getInstance();
+        console.log(instance);
+        if (instance) {
+          instance.close();
+          $.fancybox.open({
+            src  : '#success-modal',
+            type : 'inline'
+          });
+        } else {
+          window.location="success-send-form.html";
+        }
+      }
   </script>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal()}"></iframe>
-  <script src="js/main.min.js"></script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {openSuccessModal();}"></iframe>
 </body>
 
 </html>
