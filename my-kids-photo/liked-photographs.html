@@ -102,6 +102,31 @@
       </form>
     </div>
   </div>
+  <div class="modal modal_small modal_login" style="display: none;" id="login">
+    <div class="modal__wrapper">
+      <div class="modal__title modal__title_font-size-22 modal__title_center modal__title_border-bottom-none">Вход</div>
+    </div>
+    <div class="separator separator_small"></div>
+    <div class="modal__container">
+      <form class="form">
+        <div class="form__item">
+          <label class="form__label" for="email-login"></label>
+          <input class="form__input" type="email" id="email-login" placeholder="Введите Ваш e-mail">
+        </div>
+        <div class="form__item form__item_flex">
+          <div class="form__area">
+            <label class="form__label" for="password"></label>
+            <div class="form__password">
+              <input class="form__input _password-input" type="password" id="password" placeholder="Введите Ваш пароль">
+              <button class="form__password-btn"></button>
+            </div>
+          </div>
+          <button class="btn btn_bg btn_bg_red">Сменить</button>
+        </div>
+        <button class="btn btn_bg btn_bg_red">Войти</button>
+      </form>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="content">
       <header class="header">
@@ -122,7 +147,8 @@
                   <option>Санкт-Петербург</option>
                 </select>
               </div>
-              <div class="header__col header__actions"><a class="btn btn_registration header__registation" data-fancybox data-options="{&quot;src&quot;: &quot;#welcome-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Регистрация</a><a class="btn btn_transparent header__login" href="parent-settings.html">Вход</a>
+              <div class="header__col header__actions"><a class="btn btn_registration header__registation" data-fancybox data-options="{&quot;src&quot;: &quot;#welcome-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Регистрация</a><a class="btn btn_transparent header__login" data-fancybox
+                data-options="{&quot;src&quot;: &quot;#login&quot;, &quot;touch&quot;: false}" href="javascript:;">Вход</a>
               </div>
             </div>
           </div>
