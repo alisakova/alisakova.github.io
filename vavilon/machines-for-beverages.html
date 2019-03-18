@@ -10,12 +10,86 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <div class="menu _menu">
+    <div class="menu__header">
+      <div class="menu__title">Меню</div>
+      <button class="menu__close _close-menu"></button>
+    </div>
+    <nav class="nav nav_mobile">
+      <ul class="nav__list nav__list_block">
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Торговые автоматы</div>
+        </li>
+        <div class="menu__links panel"><a href="vending-machines.html">Все торговые автоматы</a><a href="floor-vending-machines.html">Напольные кофейные автоматы</a><a href="table-vending-machines.html">Настольные кофейные автоматы</a><a href="snack-machines.html">Снековые автоматы</a>
+          <a
+          href="machines-for-beverages.html">Автоматы для напитков</a><a href="machines-for-small-products.html">Автоматы для мелкой продукции</a><a href="machines-for-products.html">Автоматы для продуктов</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Кофе и ингредиенты</div>
+        </li>
+        <div class="menu__links panel"><a href="coffee-and-ingredients.html">Все кофе и ингредиенты</a><a href="coffee-beans.html">Кофе зерновой</a><a href="mocha-and-cappuccino.html">Мокка и капучино</a><a href="hot-chocolate.html">Горячий шоколад</a><a href="glasses-and-stirrers.html">Стаканчики и размешиватели</a>
+          <a
+          href="jelly.html">Кисель</a><a href="tea.html">Чай</a><a href="cream-and-toppings.html">Сливки и топпинги</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Снеки</div>
+        </li>
+        <div class="menu__links panel"><a href="snacks.html">Все снеки</a><a href="drinks.html">Напитки</a><a href="candy-bars.html">Батончики</a><a href="nuts.html">Орехи</a><a href="desserts.html">Десерты</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Доп. оборудование</div>
+        </li>
+        <div class="menu__links panel"><a href="optional-equipment.html">Все доп. оборудование</a><a href="ktt.html">КТТ и телеметрия</a><a href="payment-systems.html">Платёжные системы</a>
+        </div>
+        <li class="nav__item"><a class="nav__link nav__link_arrow" href="news.html">Новости, акции, полезное</a>
+        </li>
+        <div class="menu__links panel">
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Компания</div>
+        </li>
+        <div class="menu__links panel"><a href="company.html">Все о компании</a><a href="dealers.html">Дилеры</a><a href="partners.html">Партнеры</a><a href="service-centres.html">Сервисные центры</a><a href="working-conditions.html">Условия работы</a><a href="reviews.html">Отзывы</a>
+          <a
+          href="team.html">Команда</a>
+        </div>
+      </ul>
+    </nav>
+    <div class="menu__course">Курс € ЦБ РФ: 75.3890</div>
+    <div class="menu__contacts">
+      <div class="menu__contact">
+        <div class="menu__subtitle">Бесплатные звонки по РФ</div><a class="menu__link" href="tel:88007003443">8 800 700-34-43</a>
+      </div>
+      <div class="menu__contact">
+        <div class="menu__subtitle">Для звонков по Москве</div><a class="menu__link" href="tel:89680192212">8 968 019-22-12</a>
+      </div>
+      <div class="menu__contact">
+        <div class="menu__subtitle">E-mail отдела продаж</div><a class="menu__link_bordered menu__link" href="mailto: sale@vavilon-vending.ru">sale@vavilon-vending.ru</a>
+      </div>
+    </div>
+    <nav class="nav nav_alt">
+      <ul class="nav__list nav__list_block">
+        <li class="nav__item"><a class="nav__link" href="support.html">Техническая поддержка</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="kkt-law.html">Закон о ККТ</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="working-conditions.html">Условия работы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__text">
+      Лучшие торговые автоматы
+      <br />и ингредиенты напрямую
+      <br />от производителя
+    </div>
+  </div>
   <div class="wrapper">
     <div class="content">
       <header class="header">
@@ -23,7 +97,7 @@
           <div class="container">
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="">Техническая поддержка</a>
+                <li class="nav__item"><a class="nav__link" href="support.html">Техническая поддержка</a>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="kkt-law.html">Закон о ККТ</a>
                 </li>
@@ -37,6 +111,9 @@
         </div>
         <div class="header__second">
           <div class="container">
+            <div class="header__burger">
+              <button class="burger _open-menu"></button>
+            </div>
             <a class="header__logo" href="index.html">
               <img src="img/logo.png" alt="Вавилон Вендинг">
             </a>
@@ -80,13 +157,35 @@
         </div>
       </header>
       <main>
+        <div class="menu _submenu">
+          <div class="menu__header">
+            <div class="menu__title">Торговые автоматы</div>
+            <button class="menu__close _close-submenu"></button>
+          </div>
+          <nav class="nav nav_mobile">
+            <ul class="nav__list nav__list_block nav__list_simple">
+              <li class="nav__item"><a class="nav__link" href="floor-vending-machines.html">Напольные кофейные автоматы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="table-vending-machines.html">Настольные кофейные автоматы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="snack-machines.html">Снековые автоматы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="machines-for-beverages.html">Автоматы для напитков</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="machines-for-small-products.html">Автоматы для мелкой продукции</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="machines-for-products.html">Автоматы для продуктов</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="container">
           <div class="breadcrumbs"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__separator"></span><a class="breadcrumbs__link" href="vending-machines.html">Торговые автоматы</a><span class="breadcrumbs__separator"></span><a class="breadcrumbs__link"
             href="">Автоматы для напитков</a>
           </div>
           <div class="heading">
             <h1 class="heading__title">Автоматы для напитков</h1>
-            <div class="heading__mobile-link"></div>
+            <div class="heading__mobile-link">Виды автоматов</div>
             <div class="heading__container heading__container_flex">
               <div class="heading__links">
                 <div class="heading__wrapper"><a class="heading__link link" href="floor-vending-machines.html">Напольные кофейные автоматы</a>

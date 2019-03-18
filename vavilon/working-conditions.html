@@ -10,12 +10,86 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <div class="menu _menu">
+    <div class="menu__header">
+      <div class="menu__title">Меню</div>
+      <button class="menu__close _close-menu"></button>
+    </div>
+    <nav class="nav nav_mobile">
+      <ul class="nav__list nav__list_block">
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Торговые автоматы</div>
+        </li>
+        <div class="menu__links panel"><a href="vending-machines.html">Все торговые автоматы</a><a href="floor-vending-machines.html">Напольные кофейные автоматы</a><a href="table-vending-machines.html">Настольные кофейные автоматы</a><a href="snack-machines.html">Снековые автоматы</a>
+          <a
+          href="machines-for-beverages.html">Автоматы для напитков</a><a href="machines-for-small-products.html">Автоматы для мелкой продукции</a><a href="machines-for-products.html">Автоматы для продуктов</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Кофе и ингредиенты</div>
+        </li>
+        <div class="menu__links panel"><a href="coffee-and-ingredients.html">Все кофе и ингредиенты</a><a href="coffee-beans.html">Кофе зерновой</a><a href="mocha-and-cappuccino.html">Мокка и капучино</a><a href="hot-chocolate.html">Горячий шоколад</a><a href="glasses-and-stirrers.html">Стаканчики и размешиватели</a>
+          <a
+          href="jelly.html">Кисель</a><a href="tea.html">Чай</a><a href="cream-and-toppings.html">Сливки и топпинги</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Снеки</div>
+        </li>
+        <div class="menu__links panel"><a href="snacks.html">Все снеки</a><a href="drinks.html">Напитки</a><a href="candy-bars.html">Батончики</a><a href="nuts.html">Орехи</a><a href="desserts.html">Десерты</a>
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Доп. оборудование</div>
+        </li>
+        <div class="menu__links panel"><a href="optional-equipment.html">Все доп. оборудование</a><a href="ktt.html">КТТ и телеметрия</a><a href="payment-systems.html">Платёжные системы</a>
+        </div>
+        <li class="nav__item"><a class="nav__link nav__link_arrow" href="news.html">Новости, акции, полезное</a>
+        </li>
+        <div class="menu__links panel">
+        </div>
+        <li class="nav__item accordion">
+          <div class="nav__link nav__link_arrow">Компания</div>
+        </li>
+        <div class="menu__links panel"><a href="company.html">Все о компании</a><a href="dealers.html">Дилеры</a><a href="partners.html">Партнеры</a><a href="service-centres.html">Сервисные центры</a><a href="working-conditions.html">Условия работы</a><a href="reviews.html">Отзывы</a>
+          <a
+          href="team.html">Команда</a>
+        </div>
+      </ul>
+    </nav>
+    <div class="menu__course">Курс € ЦБ РФ: 75.3890</div>
+    <div class="menu__contacts">
+      <div class="menu__contact">
+        <div class="menu__subtitle">Бесплатные звонки по РФ</div><a class="menu__link" href="tel:88007003443">8 800 700-34-43</a>
+      </div>
+      <div class="menu__contact">
+        <div class="menu__subtitle">Для звонков по Москве</div><a class="menu__link" href="tel:89680192212">8 968 019-22-12</a>
+      </div>
+      <div class="menu__contact">
+        <div class="menu__subtitle">E-mail отдела продаж</div><a class="menu__link_bordered menu__link" href="mailto: sale@vavilon-vending.ru">sale@vavilon-vending.ru</a>
+      </div>
+    </div>
+    <nav class="nav nav_alt">
+      <ul class="nav__list nav__list_block">
+        <li class="nav__item"><a class="nav__link" href="support.html">Техническая поддержка</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="kkt-law.html">Закон о ККТ</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="working-conditions.html">Условия работы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__text">
+      Лучшие торговые автоматы
+      <br />и ингредиенты напрямую
+      <br />от производителя
+    </div>
+  </div>
   <div class="wrapper">
     <div class="content">
       <header class="header">
@@ -23,7 +97,7 @@
           <div class="container">
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="">Техническая поддержка</a>
+                <li class="nav__item"><a class="nav__link" href="support.html">Техническая поддержка</a>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="kkt-law.html">Закон о ККТ</a>
                 </li>
@@ -37,6 +111,9 @@
         </div>
         <div class="header__second">
           <div class="container">
+            <div class="header__burger">
+              <button class="burger _open-menu"></button>
+            </div>
             <a class="header__logo" href="index.html">
               <img src="img/logo.png" alt="Вавилон Вендинг">
             </a>
@@ -80,12 +157,36 @@
         </div>
       </header>
       <main>
+        <div class="menu _submenu">
+          <div class="menu__header">
+            <div class="menu__title">Компания</div>
+            <button class="menu__close _close-submenu"></button>
+          </div>
+          <nav class="nav nav_mobile">
+            <ul class="nav__list nav__list_block nav__list_simple">
+              <li class="nav__item"><a class="nav__link" href="company.html">Компания</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="dealers.html">Дилеры</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="partners.html">Партнеры</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="service-centres.html">Сервисные центры</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="working-conditions.html">Условия работы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="team.html">Команда</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="container">
           <div class="breadcrumbs"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__separator"></span><a class="breadcrumbs__link" href="">Условия работы</a>
           </div>
           <div class="heading">
             <h1 class="heading__title">Условия работы</h1>
-            <div class="heading__mobile-link"></div>
+            <div class="heading__mobile-link">Компания</div>
             <div class="heading__container">
               <div class="heading__links">
                 <div class="heading__wrapper heading__wrapper_company"><a class="heading__link link" href="company.html">Компания</a>
@@ -114,42 +215,44 @@
             </div>
             <section id="working-conditions">
               <h2 class="working-conditions__title">Условия работы по заказу Торговых аппаратов</h2>
-              <p class="working-conditions__text">• Оформить заказ можно через наш сайт или прислать заявку по электронной почте sale@vavilon-vending.ru Информацию по всем интересующим вопросам можно получить по телефону: 8-800-700-34- 43 (доб.1)</p>
-              <p class="working-conditions__text">• После получения заказа, Вам будет выставлен счет на оплату. Оплата производится банковским платежом на расчётный счёт нашей компании.</p>
-              <p class="working-conditions__text">• Для выставления счета необходимо отправить на электронную почту sale@vavilon-vending.ru следующие документы:</p>
-              <p class="working-conditions__text">для ИП: Скан копии Свидетельства о регистрации, ИНН, адрес по прописке, фактический адрес, контактный телефон, банковские реквизиты (при наличии)</p>
-              <p class="working-conditions__text">для Юридических лиц: Скан копии Свидетельства о регистрации, ИНН, юридический адрес, фактический адрес, контактный телефон, банковские реквизиты</p>
-              <p class="working-conditions__text">для частных лиц: Скан копию паспорта (первая страница, страница с пропиской), фактический адрес, контактный телефон</p>
-              <p class="working-conditions__text">• Наш менеджер подготовит договор поставки и пришлет его в электронном виде, а также образец доверенности для передачи груза в Транспортную компанию и оформления заявки от Вашего имени. Вам необходимо подписать данные документы и в сканированном
-                виде прислать по электронной почте, после чего оригинал договора мы отправим заказным письмом.</p>
-              <p class="working-conditions__text">• Ваш товар и сопроводительные документы будут готовы к отгрузке в течение 3-х рабочих дней с момента поступления денежных средств на наш расчетный счет.</p>
-              <p class="working-conditions__text">• Товар со склада будет отгружен транспортной компании только на основании Вашей доверенности.</p>
-              <p class="working-conditions__text">• Доставка для клиентов из Москвы в пределах МКАД осуществляется бесплатно.</p>
-              <p class="working-conditions__text">• Доставка до ТК ПЭК осуществляется бесплатно.</p>
-              <p class="working-conditions__text">• Стоимость перевозки транспортной компанией оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе.</p>
-              <h2 class="working-conditions__title">Условия работы по заказу Ингредиентов и сопутствующих товаров для вендинга</h2>
-              <p class="working-conditions__text">• Оформить заказ можно через нашу форму заявки или прислать заявку по электронной почте order@k-vending.ru.</p>
-              <p class="working-conditions__text">• Информацию по всем интересующим вопросам можно получить по телефону: 8-800-700-34- 43 (доб.2), 8-909-781-97-28.</p>
-              <p class="working-conditions__text">• После получения заказа, Вам будет выставлен счет на оплату с учётом предусмотренных скидок. Оплата производится банковским платежом на расчётный счёт нашей компании.</p>
-              <p class="working-conditions__text">• Наш менеджер подготовит договор поставки и пришлет его в электронном виде, а также образец доверенности для передачи груза в Транспортную компанию и оформления заявки от Вашего имени. Вам необходимо подписать данные документы и в сканированном
-                виде прислать по электронной почте, после чего оригинал договора мы отправим заказным письмом.</p>
-              <p class="working-conditions__text">• Ваш товар и сопроводительные документы будут готовы к отгрузке в течение 3-х рабочих дней с момента поступления денежных средств на наш расчетный счет.</p>
-              <p class="working-conditions__text">• Товар со склада будет отгружен транспортной компании только на основании Вашей доверенности.</p>
-              <p class="working-conditions__text">• Доставка для клиентов из Москвы осуществляется бесплатно в пределах МКАД при сумме разовой покупки свыше 30 000 рублей (сумма заказа без учета расходных материалов).</p>
-              <p class="working-conditions__text">• Региональным клиентам доставка до склада транспортных компаний в пределах МКАД осуществляется бесплатно при сумме покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов).</p>
-              <p class="working-conditions__text">• Стоимость перевозки транспортной компанией оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе</p>
-            </section>
-            <section id="delivery-conditions">
-              <h2 class="working-conditions__title working-conditions__title_margin-top">Условия доставки</h2>
-              <p class="working-conditions__text">Доставка товара осуществляется при помощи транспортной компании ПЭК. Для клиентов из Москвы и Московской области возможен самовывоз товара с нашего склада в г. Люберцы.</p>
-              <p class="working-conditions__text working-conditions__text_bold">Оплата:</p>
-              <p class="working-conditions__text">• Доставка Торговых Автоматов для клиентов из Москвы в пределах МКАД осуществляется бесплатно.</p>
-              <p class="working-conditions__text">• Доставка Ингредиентов для клиентов из Москвы осуществляется в пределах МКАД бесплатно при сумме разовой покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов). Для региональных клиентов стоимость доставки до распределительного
-                центра транспортной компании ПЭК, Деловые Линии осуществляется бесплатно при сумме разовой покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов). Доставка до распределительных центров других транспортных компаний –
-                платная.</p>
-              <p class="working-conditions__text">• Стоимость перевозки транспортной компанией ПЭК оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе.</p>
-              <p class="working-conditions__text">• При единовременной покупке партии запасных частей на сумму свыше 10 000 рублей, мы осуществляем доставку бесплатно</p>
-              <p class="working-conditions__text working-conditions__text_big-margin-top">Найти ближайший к вам склад можно на сайте транспортной компании ПЭК</p>
+              <div class="wrap-text working-text">
+                <p class="working-conditions__text">• Оформить заказ можно через наш сайт или прислать заявку по электронной почте sale@vavilon-vending.ru Информацию по всем интересующим вопросам можно получить по телефону: 8-800-700-34- 43 (доб.1)</p>
+                <p class="working-conditions__text">• После получения заказа, Вам будет выставлен счет на оплату. Оплата производится банковским платежом на расчётный счёт нашей компании.</p>
+                <p class="working-conditions__text">• Для выставления счета необходимо отправить на электронную почту sale@vavilon-vending.ru следующие документы:</p>
+                <p class="working-conditions__text">для ИП: Скан копии Свидетельства о регистрации, ИНН, адрес по прописке, фактический адрес, контактный телефон, банковские реквизиты (при наличии)</p>
+                <p class="working-conditions__text">для Юридических лиц: Скан копии Свидетельства о регистрации, ИНН, юридический адрес, фактический адрес, контактный телефон, банковские реквизиты</p>
+                <p class="working-conditions__text">для частных лиц: Скан копию паспорта (первая страница, страница с пропиской), фактический адрес, контактный телефон</p>
+                <p class="working-conditions__text">• Наш менеджер подготовит договор поставки и пришлет его в электронном виде, а также образец доверенности для передачи груза в Транспортную компанию и оформления заявки от Вашего имени. Вам необходимо подписать данные документы и в сканированном
+                  виде прислать по электронной почте, после чего оригинал договора мы отправим заказным письмом.</p>
+                <p class="working-conditions__text">• Ваш товар и сопроводительные документы будут готовы к отгрузке в течение 3-х рабочих дней с момента поступления денежных средств на наш расчетный счет.</p>
+                <p class="working-conditions__text">• Товар со склада будет отгружен транспортной компании только на основании Вашей доверенности.</p>
+                <p class="working-conditions__text">• Доставка для клиентов из Москвы в пределах МКАД осуществляется бесплатно.</p>
+                <p class="working-conditions__text">• Доставка до ТК ПЭК осуществляется бесплатно.</p>
+                <p class="working-conditions__text">• Стоимость перевозки транспортной компанией оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе.</p>
+                <h2 class="working-conditions__title">Условия работы по заказу Ингредиентов и сопутствующих товаров для вендинга</h2>
+                <p class="working-conditions__text">• Оформить заказ можно через нашу форму заявки или прислать заявку по электронной почте order@k-vending.ru.</p>
+                <p class="working-conditions__text">• Информацию по всем интересующим вопросам можно получить по телефону: 8-800-700-34- 43 (доб.2), 8-909-781-97-28.</p>
+                <p class="working-conditions__text">• После получения заказа, Вам будет выставлен счет на оплату с учётом предусмотренных скидок. Оплата производится банковским платежом на расчётный счёт нашей компании.</p>
+                <p class="working-conditions__text">• Наш менеджер подготовит договор поставки и пришлет его в электронном виде, а также образец доверенности для передачи груза в Транспортную компанию и оформления заявки от Вашего имени. Вам необходимо подписать данные документы и в сканированном
+                  виде прислать по электронной почте, после чего оригинал договора мы отправим заказным письмом.</p>
+                <p class="working-conditions__text">• Ваш товар и сопроводительные документы будут готовы к отгрузке в течение 3-х рабочих дней с момента поступления денежных средств на наш расчетный счет.</p>
+                <p class="working-conditions__text">• Товар со склада будет отгружен транспортной компании только на основании Вашей доверенности.</p>
+                <p class="working-conditions__text">• Доставка для клиентов из Москвы осуществляется бесплатно в пределах МКАД при сумме разовой покупки свыше 30 000 рублей (сумма заказа без учета расходных материалов).</p>
+                <p class="working-conditions__text">• Региональным клиентам доставка до склада транспортных компаний в пределах МКАД осуществляется бесплатно при сумме покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов).</p>
+                <p class="working-conditions__text">• Стоимость перевозки транспортной компанией оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе</p>
+                <section id="delivery-conditions">
+                  <h2 class="working-conditions__title working-conditions__title_margin-top">Условия доставки</h2>
+                  <p class="working-conditions__text">Доставка товара осуществляется при помощи транспортной компании ПЭК. Для клиентов из Москвы и Московской области возможен самовывоз товара с нашего склада в г. Люберцы.</p>
+                  <p class="working-conditions__text working-conditions__text_bold">Оплата:</p>
+                  <p class="working-conditions__text">• Доставка Торговых Автоматов для клиентов из Москвы в пределах МКАД осуществляется бесплатно.</p>
+                  <p class="working-conditions__text">• Доставка Ингредиентов для клиентов из Москвы осуществляется в пределах МКАД бесплатно при сумме разовой покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов). Для региональных клиентов стоимость доставки до распределительного
+                    центра транспортной компании ПЭК, Деловые Линии осуществляется бесплатно при сумме разовой покупки свыше 15 000 рублей (сумма заказа без учета расходных материалов). Доставка до распределительных центров других транспортных компаний
+                    – платная.</p>
+                  <p class="working-conditions__text">• Стоимость перевозки транспортной компанией ПЭК оплачивается в соответствии с тарифами грузоперевозчика в вашем регионе.</p>
+                  <p class="working-conditions__text">• При единовременной покупке партии запасных частей на сумму свыше 10 000 рублей, мы осуществляем доставку бесплатно</p>
+                  <p class="working-conditions__text working-conditions__text_big-margin-top">Найти ближайший к вам склад можно на сайте транспортной компании ПЭК</p>
+                </section>
+              </div><a class="mobile-show-btn">Показать полностью</a>
             </section>
           </div>
         </div>
