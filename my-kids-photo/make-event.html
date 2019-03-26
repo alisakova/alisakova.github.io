@@ -275,8 +275,8 @@
                   <div class="event-form__col">
                     <div class="event-form__upload">
                       <div class="event-form__upload-text">Фото</div>
-                      <label class="upload-file upload-file_photo">
-                        <input type="file">
+                      <label class="upload-file upload-file_photo" ondrop="dropHandler(event);">
+                        <input type="file" multiple>
                         <div class="upload-file__container"></div>
                         <div class="upload-file__text btn-dashed">Загрузить фото</div>
                       </label>
